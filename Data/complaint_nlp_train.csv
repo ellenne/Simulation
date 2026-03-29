@@ -1,0 +1,2001 @@
+id,complaint_text,category_label
+1,I was charged twice for my reservation,billing
+2,Mobile app is not loading properly,technical
+3,Customer service did not respond to my request,service
+4,Payment was deducted but booking not confirmed,billing
+5,Payment was deducted but booking not confirmed,billing
+6,My reservation disappeared from the system,booking
+7,I was charged twice for my reservation,billing
+8,Customer service did not respond to my request,service
+9,Housekeeping did not clean the room,cleanliness
+10,Payment was deducted but booking not confirmed,billing
+11,My request was ignored by the service team,service
+12,Room booking was not confirmed,booking
+13,Booking confirmation email never arrived,booking
+14,The booking website crashed during payment,technical
+15,Reception staff behaved unprofessionally,service
+16,System error while confirming reservation,technical
+17,Customer service did not respond to my request,service
+18,The booking website crashed during payment,technical
+19,Refund has not been processed,billing
+20,Unexpected charges appeared on my bill,billing
+21,The website keeps showing server errors,technical
+22,The booking website crashed during payment,technical
+23,Booking confirmation email never arrived,booking
+24,Refund has not been processed,billing
+25,Payment was deducted but booking not confirmed,billing
+26,The website keeps showing server errors,technical
+27,The website keeps showing server errors,technical
+28,The staff was not helpful during check-in,service
+29,The invoice amount is incorrect,billing
+30,The booking website crashed during payment,technical
+31,The staff was not helpful during check-in,service
+32,I received the wrong booking dates,booking
+33,I received the wrong booking dates,booking
+34,The response from support was very slow,service
+35,Mobile app is not loading properly,technical
+36,The booking website crashed during payment,technical
+37,Bathroom hygiene was unacceptable,cleanliness
+38,Bathroom hygiene was unacceptable,cleanliness
+39,Reception staff behaved unprofessionally,service
+40,I received the wrong booking dates,booking
+41,Bathroom hygiene was unacceptable,cleanliness
+42,The booking website crashed during payment,technical
+43,The staff was not helpful during check-in,service
+44,Unable to access my account,technical
+45,The booking website crashed during payment,technical
+46,My request was ignored by the service team,service
+47,Mobile app is not loading properly,technical
+48,Reservation details were incorrect,booking
+49,Room booking was not confirmed,booking
+50,Mobile app is not loading properly,technical
+51,My request was ignored by the service team,service
+52,Bedsheets were dirty,cleanliness
+53,The room had a bad smell,cleanliness
+54,The room had a bad smell,cleanliness
+55,Mobile app is not loading properly,technical
+56,My request was ignored by the service team,service
+57,My reservation disappeared from the system,booking
+58,I was charged twice for my reservation,billing
+59,Customer service did not respond to my request,service
+60,Booking confirmation email never arrived,booking
+61,Refund has not been processed,billing
+62,Booking confirmation email never arrived,booking
+63,Booking confirmation email never arrived,booking
+64,The website keeps showing server errors,technical
+65,I was charged twice for my reservation,billing
+66,Bedsheets were dirty,cleanliness
+67,The booking website crashed during payment,technical
+68,Unable to access my account,technical
+69,Reception staff behaved unprofessionally,service
+70,Unexpected charges appeared on my bill,billing
+71,Bathroom hygiene was unacceptable,cleanliness
+72,The hotel room was not clean,cleanliness
+73,The website keeps showing server errors,technical
+74,Bathroom hygiene was unacceptable,cleanliness
+75,The response from support was very slow,service
+76,My request was ignored by the service team,service
+77,The hotel room was not clean,cleanliness
+78,Bedsheets were dirty,cleanliness
+79,My reservation disappeared from the system,booking
+80,Unexpected charges appeared on my bill,billing
+81,Mobile app is not loading properly,technical
+82,The invoice amount is incorrect,billing
+83,The hotel room was not clean,cleanliness
+84,Refund has not been processed,billing
+85,Payment was deducted but booking not confirmed,billing
+86,Customer service did not respond to my request,service
+87,Booking confirmation email never arrived,booking
+88,The response from support was very slow,service
+89,Housekeeping did not clean the room,cleanliness
+90,Room booking was not confirmed,booking
+91,Bathroom hygiene was unacceptable,cleanliness
+92,Unable to access my account,technical
+93,Unable to access my account,technical
+94,The room had a bad smell,cleanliness
+95,The invoice amount is incorrect,billing
+96,The staff was not helpful during check-in,service
+97,The booking website crashed during payment,technical
+98,Housekeeping did not clean the room,cleanliness
+99,My request was ignored by the service team,service
+100,The staff was not helpful during check-in,service
+101,I was charged twice for my reservation,billing
+102,The staff was not helpful during check-in,service
+103,Unexpected charges appeared on my bill,billing
+104,Payment was deducted but booking not confirmed,billing
+105,The response from support was very slow,service
+106,Room booking was not confirmed,booking
+107,Bathroom hygiene was unacceptable,cleanliness
+108,Housekeeping did not clean the room,cleanliness
+109,Room booking was not confirmed,booking
+110,Reservation details were incorrect,booking
+111,The staff was not helpful during check-in,service
+112,Refund has not been processed,billing
+113,Unable to access my account,technical
+114,Reservation details were incorrect,booking
+115,I was charged twice for my reservation,billing
+116,Refund has not been processed,billing
+117,The booking website crashed during payment,technical
+118,Customer service did not respond to my request,service
+119,My request was ignored by the service team,service
+120,Room booking was not confirmed,booking
+121,Room booking was not confirmed,booking
+122,Unable to access my account,technical
+123,The staff was not helpful during check-in,service
+124,Booking confirmation email never arrived,booking
+125,I was charged twice for my reservation,billing
+126,The hotel room was not clean,cleanliness
+127,The invoice amount is incorrect,billing
+128,Reception staff behaved unprofessionally,service
+129,Reservation details were incorrect,booking
+130,Reception staff behaved unprofessionally,service
+131,The invoice amount is incorrect,billing
+132,My reservation disappeared from the system,booking
+133,I received the wrong booking dates,booking
+134,I received the wrong booking dates,booking
+135,Booking confirmation email never arrived,booking
+136,Room booking was not confirmed,booking
+137,The response from support was very slow,service
+138,The staff was not helpful during check-in,service
+139,Housekeeping did not clean the room,cleanliness
+140,Unexpected charges appeared on my bill,billing
+141,I was charged twice for my reservation,billing
+142,The room had a bad smell,cleanliness
+143,Housekeeping did not clean the room,cleanliness
+144,The staff was not helpful during check-in,service
+145,The hotel room was not clean,cleanliness
+146,The staff was not helpful during check-in,service
+147,The hotel room was not clean,cleanliness
+148,Reception staff behaved unprofessionally,service
+149,Payment was deducted but booking not confirmed,billing
+150,My request was ignored by the service team,service
+151,The hotel room was not clean,cleanliness
+152,The hotel room was not clean,cleanliness
+153,Booking confirmation email never arrived,booking
+154,Housekeeping did not clean the room,cleanliness
+155,System error while confirming reservation,technical
+156,The response from support was very slow,service
+157,The response from support was very slow,service
+158,Room booking was not confirmed,booking
+159,Unable to access my account,technical
+160,The booking website crashed during payment,technical
+161,Refund has not been processed,billing
+162,Housekeeping did not clean the room,cleanliness
+163,I was charged twice for my reservation,billing
+164,Bathroom hygiene was unacceptable,cleanliness
+165,Bedsheets were dirty,cleanliness
+166,The response from support was very slow,service
+167,The invoice amount is incorrect,billing
+168,System error while confirming reservation,technical
+169,Reception staff behaved unprofessionally,service
+170,Bedsheets were dirty,cleanliness
+171,Housekeeping did not clean the room,cleanliness
+172,Payment was deducted but booking not confirmed,billing
+173,The booking website crashed during payment,technical
+174,The response from support was very slow,service
+175,I was charged twice for my reservation,billing
+176,Bathroom hygiene was unacceptable,cleanliness
+177,System error while confirming reservation,technical
+178,Bathroom hygiene was unacceptable,cleanliness
+179,Mobile app is not loading properly,technical
+180,The website keeps showing server errors,technical
+181,I received the wrong booking dates,booking
+182,I was charged twice for my reservation,billing
+183,I received the wrong booking dates,booking
+184,I was charged twice for my reservation,billing
+185,Mobile app is not loading properly,technical
+186,Mobile app is not loading properly,technical
+187,Booking confirmation email never arrived,booking
+188,Booking confirmation email never arrived,booking
+189,I was charged twice for my reservation,billing
+190,The invoice amount is incorrect,billing
+191,The hotel room was not clean,cleanliness
+192,The website keeps showing server errors,technical
+193,Bathroom hygiene was unacceptable,cleanliness
+194,Room booking was not confirmed,booking
+195,Unexpected charges appeared on my bill,billing
+196,The booking website crashed during payment,technical
+197,Mobile app is not loading properly,technical
+198,The staff was not helpful during check-in,service
+199,The website keeps showing server errors,technical
+200,Booking confirmation email never arrived,booking
+201,Customer service did not respond to my request,service
+202,Customer service did not respond to my request,service
+203,My reservation disappeared from the system,booking
+204,The response from support was very slow,service
+205,Room booking was not confirmed,booking
+206,Mobile app is not loading properly,technical
+207,Refund has not been processed,billing
+208,Refund has not been processed,billing
+209,Customer service did not respond to my request,service
+210,I received the wrong booking dates,booking
+211,Mobile app is not loading properly,technical
+212,The staff was not helpful during check-in,service
+213,Reception staff behaved unprofessionally,service
+214,System error while confirming reservation,technical
+215,Unexpected charges appeared on my bill,billing
+216,The website keeps showing server errors,technical
+217,Booking confirmation email never arrived,booking
+218,The booking website crashed during payment,technical
+219,Unexpected charges appeared on my bill,billing
+220,My request was ignored by the service team,service
+221,The booking website crashed during payment,technical
+222,Payment was deducted but booking not confirmed,billing
+223,I received the wrong booking dates,booking
+224,Unable to access my account,technical
+225,Housekeeping did not clean the room,cleanliness
+226,Refund has not been processed,billing
+227,Bathroom hygiene was unacceptable,cleanliness
+228,The booking website crashed during payment,technical
+229,My reservation disappeared from the system,booking
+230,Housekeeping did not clean the room,cleanliness
+231,The response from support was very slow,service
+232,My reservation disappeared from the system,booking
+233,The website keeps showing server errors,technical
+234,The booking website crashed during payment,technical
+235,The website keeps showing server errors,technical
+236,Unable to access my account,technical
+237,Unable to access my account,technical
+238,The website keeps showing server errors,technical
+239,Customer service did not respond to my request,service
+240,Reservation details were incorrect,booking
+241,My request was ignored by the service team,service
+242,Bedsheets were dirty,cleanliness
+243,Booking confirmation email never arrived,booking
+244,Unexpected charges appeared on my bill,billing
+245,Mobile app is not loading properly,technical
+246,Booking confirmation email never arrived,booking
+247,Bedsheets were dirty,cleanliness
+248,Reservation details were incorrect,booking
+249,Room booking was not confirmed,booking
+250,The room had a bad smell,cleanliness
+251,The staff was not helpful during check-in,service
+252,The website keeps showing server errors,technical
+253,Bedsheets were dirty,cleanliness
+254,The invoice amount is incorrect,billing
+255,Mobile app is not loading properly,technical
+256,Customer service did not respond to my request,service
+257,I was charged twice for my reservation,billing
+258,Reception staff behaved unprofessionally,service
+259,The hotel room was not clean,cleanliness
+260,Reservation details were incorrect,booking
+261,Bathroom hygiene was unacceptable,cleanliness
+262,Reservation details were incorrect,booking
+263,Room booking was not confirmed,booking
+264,The staff was not helpful during check-in,service
+265,Refund has not been processed,billing
+266,Customer service did not respond to my request,service
+267,The room had a bad smell,cleanliness
+268,Payment was deducted but booking not confirmed,billing
+269,The staff was not helpful during check-in,service
+270,Room booking was not confirmed,booking
+271,Booking confirmation email never arrived,booking
+272,Housekeeping did not clean the room,cleanliness
+273,Unable to access my account,technical
+274,Housekeeping did not clean the room,cleanliness
+275,Booking confirmation email never arrived,booking
+276,Room booking was not confirmed,booking
+277,Reservation details were incorrect,booking
+278,Mobile app is not loading properly,technical
+279,The website keeps showing server errors,technical
+280,Room booking was not confirmed,booking
+281,Unable to access my account,technical
+282,Unexpected charges appeared on my bill,billing
+283,The response from support was very slow,service
+284,System error while confirming reservation,technical
+285,The hotel room was not clean,cleanliness
+286,Customer service did not respond to my request,service
+287,Reception staff behaved unprofessionally,service
+288,Customer service did not respond to my request,service
+289,Refund has not been processed,billing
+290,I received the wrong booking dates,booking
+291,The room had a bad smell,cleanliness
+292,My reservation disappeared from the system,booking
+293,Reception staff behaved unprofessionally,service
+294,Booking confirmation email never arrived,booking
+295,Payment was deducted but booking not confirmed,billing
+296,Reservation details were incorrect,booking
+297,Unexpected charges appeared on my bill,billing
+298,Unable to access my account,technical
+299,Booking confirmation email never arrived,booking
+300,Housekeeping did not clean the room,cleanliness
+301,Reception staff behaved unprofessionally,service
+302,The response from support was very slow,service
+303,Reservation details were incorrect,booking
+304,Refund has not been processed,billing
+305,Unable to access my account,technical
+306,Reception staff behaved unprofessionally,service
+307,My request was ignored by the service team,service
+308,The hotel room was not clean,cleanliness
+309,Booking confirmation email never arrived,booking
+310,The hotel room was not clean,cleanliness
+311,Refund has not been processed,billing
+312,Reception staff behaved unprofessionally,service
+313,The staff was not helpful during check-in,service
+314,Unable to access my account,technical
+315,Mobile app is not loading properly,technical
+316,I received the wrong booking dates,booking
+317,Unable to access my account,technical
+318,Unable to access my account,technical
+319,The booking website crashed during payment,technical
+320,My reservation disappeared from the system,booking
+321,The hotel room was not clean,cleanliness
+322,Mobile app is not loading properly,technical
+323,I was charged twice for my reservation,billing
+324,The invoice amount is incorrect,billing
+325,The staff was not helpful during check-in,service
+326,Bathroom hygiene was unacceptable,cleanliness
+327,Customer service did not respond to my request,service
+328,My reservation disappeared from the system,booking
+329,Bathroom hygiene was unacceptable,cleanliness
+330,I received the wrong booking dates,booking
+331,Mobile app is not loading properly,technical
+332,Housekeeping did not clean the room,cleanliness
+333,The invoice amount is incorrect,billing
+334,The booking website crashed during payment,technical
+335,The hotel room was not clean,cleanliness
+336,The website keeps showing server errors,technical
+337,Reservation details were incorrect,booking
+338,The staff was not helpful during check-in,service
+339,Bathroom hygiene was unacceptable,cleanliness
+340,Unexpected charges appeared on my bill,billing
+341,The hotel room was not clean,cleanliness
+342,The hotel room was not clean,cleanliness
+343,The website keeps showing server errors,technical
+344,I received the wrong booking dates,booking
+345,Payment was deducted but booking not confirmed,billing
+346,The booking website crashed during payment,technical
+347,Reservation details were incorrect,booking
+348,Refund has not been processed,billing
+349,Unable to access my account,technical
+350,Reception staff behaved unprofessionally,service
+351,My request was ignored by the service team,service
+352,The website keeps showing server errors,technical
+353,The room had a bad smell,cleanliness
+354,Reservation details were incorrect,booking
+355,Bedsheets were dirty,cleanliness
+356,Mobile app is not loading properly,technical
+357,Unexpected charges appeared on my bill,billing
+358,Room booking was not confirmed,booking
+359,Booking confirmation email never arrived,booking
+360,The room had a bad smell,cleanliness
+361,The booking website crashed during payment,technical
+362,I received the wrong booking dates,booking
+363,Reception staff behaved unprofessionally,service
+364,The response from support was very slow,service
+365,System error while confirming reservation,technical
+366,The website keeps showing server errors,technical
+367,The website keeps showing server errors,technical
+368,Payment was deducted but booking not confirmed,billing
+369,The staff was not helpful during check-in,service
+370,Reception staff behaved unprofessionally,service
+371,Booking confirmation email never arrived,booking
+372,Reception staff behaved unprofessionally,service
+373,Reservation details were incorrect,booking
+374,I was charged twice for my reservation,billing
+375,Mobile app is not loading properly,technical
+376,Room booking was not confirmed,booking
+377,The website keeps showing server errors,technical
+378,Unable to access my account,technical
+379,Housekeeping did not clean the room,cleanliness
+380,Unable to access my account,technical
+381,Bedsheets were dirty,cleanliness
+382,Unable to access my account,technical
+383,System error while confirming reservation,technical
+384,Mobile app is not loading properly,technical
+385,The invoice amount is incorrect,billing
+386,The booking website crashed during payment,technical
+387,Bathroom hygiene was unacceptable,cleanliness
+388,Customer service did not respond to my request,service
+389,I received the wrong booking dates,booking
+390,Housekeeping did not clean the room,cleanliness
+391,Bedsheets were dirty,cleanliness
+392,The invoice amount is incorrect,billing
+393,Mobile app is not loading properly,technical
+394,Mobile app is not loading properly,technical
+395,The booking website crashed during payment,technical
+396,Bathroom hygiene was unacceptable,cleanliness
+397,The booking website crashed during payment,technical
+398,Payment was deducted but booking not confirmed,billing
+399,Mobile app is not loading properly,technical
+400,My reservation disappeared from the system,booking
+401,Payment was deducted but booking not confirmed,billing
+402,Unable to access my account,technical
+403,Reservation details were incorrect,booking
+404,Mobile app is not loading properly,technical
+405,Unexpected charges appeared on my bill,billing
+406,My reservation disappeared from the system,booking
+407,Refund has not been processed,billing
+408,My reservation disappeared from the system,booking
+409,The hotel room was not clean,cleanliness
+410,Customer service did not respond to my request,service
+411,Bedsheets were dirty,cleanliness
+412,The invoice amount is incorrect,billing
+413,Payment was deducted but booking not confirmed,billing
+414,Booking confirmation email never arrived,booking
+415,Housekeeping did not clean the room,cleanliness
+416,My request was ignored by the service team,service
+417,Reservation details were incorrect,booking
+418,I received the wrong booking dates,booking
+419,The room had a bad smell,cleanliness
+420,The website keeps showing server errors,technical
+421,The hotel room was not clean,cleanliness
+422,The hotel room was not clean,cleanliness
+423,Customer service did not respond to my request,service
+424,The booking website crashed during payment,technical
+425,Customer service did not respond to my request,service
+426,My request was ignored by the service team,service
+427,The invoice amount is incorrect,billing
+428,Refund has not been processed,billing
+429,Booking confirmation email never arrived,booking
+430,I received the wrong booking dates,booking
+431,The invoice amount is incorrect,billing
+432,System error while confirming reservation,technical
+433,My reservation disappeared from the system,booking
+434,The response from support was very slow,service
+435,Bathroom hygiene was unacceptable,cleanliness
+436,My reservation disappeared from the system,booking
+437,Bathroom hygiene was unacceptable,cleanliness
+438,The response from support was very slow,service
+439,The staff was not helpful during check-in,service
+440,The invoice amount is incorrect,billing
+441,The website keeps showing server errors,technical
+442,Bedsheets were dirty,cleanliness
+443,My reservation disappeared from the system,booking
+444,I received the wrong booking dates,booking
+445,I received the wrong booking dates,booking
+446,Housekeeping did not clean the room,cleanliness
+447,Reservation details were incorrect,booking
+448,Payment was deducted but booking not confirmed,billing
+449,Refund has not been processed,billing
+450,The website keeps showing server errors,technical
+451,The booking website crashed during payment,technical
+452,The invoice amount is incorrect,billing
+453,Housekeeping did not clean the room,cleanliness
+454,Unexpected charges appeared on my bill,billing
+455,The hotel room was not clean,cleanliness
+456,Reception staff behaved unprofessionally,service
+457,The room had a bad smell,cleanliness
+458,Mobile app is not loading properly,technical
+459,The room had a bad smell,cleanliness
+460,My reservation disappeared from the system,booking
+461,I received the wrong booking dates,booking
+462,I received the wrong booking dates,booking
+463,The booking website crashed during payment,technical
+464,The response from support was very slow,service
+465,Reservation details were incorrect,booking
+466,Unable to access my account,technical
+467,The hotel room was not clean,cleanliness
+468,My reservation disappeared from the system,booking
+469,System error while confirming reservation,technical
+470,The booking website crashed during payment,technical
+471,Booking confirmation email never arrived,booking
+472,Payment was deducted but booking not confirmed,billing
+473,Reservation details were incorrect,booking
+474,The invoice amount is incorrect,billing
+475,Bedsheets were dirty,cleanliness
+476,The room had a bad smell,cleanliness
+477,My reservation disappeared from the system,booking
+478,The response from support was very slow,service
+479,Bathroom hygiene was unacceptable,cleanliness
+480,Unable to access my account,technical
+481,My reservation disappeared from the system,booking
+482,Payment was deducted but booking not confirmed,billing
+483,Customer service did not respond to my request,service
+484,The website keeps showing server errors,technical
+485,Payment was deducted but booking not confirmed,billing
+486,My reservation disappeared from the system,booking
+487,The staff was not helpful during check-in,service
+488,My reservation disappeared from the system,booking
+489,Reception staff behaved unprofessionally,service
+490,The website keeps showing server errors,technical
+491,Unable to access my account,technical
+492,Reservation details were incorrect,booking
+493,Reception staff behaved unprofessionally,service
+494,Bathroom hygiene was unacceptable,cleanliness
+495,Room booking was not confirmed,booking
+496,Housekeeping did not clean the room,cleanliness
+497,The staff was not helpful during check-in,service
+498,Unable to access my account,technical
+499,The website keeps showing server errors,technical
+500,The booking website crashed during payment,technical
+501,System error while confirming reservation,technical
+502,Housekeeping did not clean the room,cleanliness
+503,Room booking was not confirmed,booking
+504,Booking confirmation email never arrived,booking
+505,I received the wrong booking dates,booking
+506,The website keeps showing server errors,technical
+507,The room had a bad smell,cleanliness
+508,I received the wrong booking dates,booking
+509,Customer service did not respond to my request,service
+510,The room had a bad smell,cleanliness
+511,Reception staff behaved unprofessionally,service
+512,Unexpected charges appeared on my bill,billing
+513,Reservation details were incorrect,booking
+514,Room booking was not confirmed,booking
+515,My reservation disappeared from the system,booking
+516,My request was ignored by the service team,service
+517,Bedsheets were dirty,cleanliness
+518,Refund has not been processed,billing
+519,Payment was deducted but booking not confirmed,billing
+520,My reservation disappeared from the system,booking
+521,Reception staff behaved unprofessionally,service
+522,The staff was not helpful during check-in,service
+523,I received the wrong booking dates,booking
+524,The website keeps showing server errors,technical
+525,My reservation disappeared from the system,booking
+526,The website keeps showing server errors,technical
+527,I received the wrong booking dates,booking
+528,Booking confirmation email never arrived,booking
+529,Payment was deducted but booking not confirmed,billing
+530,The invoice amount is incorrect,billing
+531,Mobile app is not loading properly,technical
+532,Refund has not been processed,billing
+533,I was charged twice for my reservation,billing
+534,Room booking was not confirmed,booking
+535,The booking website crashed during payment,technical
+536,Unexpected charges appeared on my bill,billing
+537,Unexpected charges appeared on my bill,billing
+538,System error while confirming reservation,technical
+539,Room booking was not confirmed,booking
+540,My request was ignored by the service team,service
+541,Booking confirmation email never arrived,booking
+542,Customer service did not respond to my request,service
+543,The staff was not helpful during check-in,service
+544,The room had a bad smell,cleanliness
+545,Bathroom hygiene was unacceptable,cleanliness
+546,Booking confirmation email never arrived,booking
+547,Customer service did not respond to my request,service
+548,I received the wrong booking dates,booking
+549,I received the wrong booking dates,booking
+550,Refund has not been processed,billing
+551,The website keeps showing server errors,technical
+552,The staff was not helpful during check-in,service
+553,I received the wrong booking dates,booking
+554,Bedsheets were dirty,cleanliness
+555,I received the wrong booking dates,booking
+556,I received the wrong booking dates,booking
+557,Reception staff behaved unprofessionally,service
+558,My reservation disappeared from the system,booking
+559,Reception staff behaved unprofessionally,service
+560,Bedsheets were dirty,cleanliness
+561,Bedsheets were dirty,cleanliness
+562,The booking website crashed during payment,technical
+563,I received the wrong booking dates,booking
+564,Payment was deducted but booking not confirmed,billing
+565,Payment was deducted but booking not confirmed,billing
+566,I received the wrong booking dates,booking
+567,My request was ignored by the service team,service
+568,Mobile app is not loading properly,technical
+569,My request was ignored by the service team,service
+570,Mobile app is not loading properly,technical
+571,I was charged twice for my reservation,billing
+572,Unable to access my account,technical
+573,Payment was deducted but booking not confirmed,billing
+574,Mobile app is not loading properly,technical
+575,Unexpected charges appeared on my bill,billing
+576,Unable to access my account,technical
+577,Customer service did not respond to my request,service
+578,My request was ignored by the service team,service
+579,The website keeps showing server errors,technical
+580,Bedsheets were dirty,cleanliness
+581,The response from support was very slow,service
+582,I received the wrong booking dates,booking
+583,The booking website crashed during payment,technical
+584,My reservation disappeared from the system,booking
+585,Customer service did not respond to my request,service
+586,Booking confirmation email never arrived,booking
+587,The booking website crashed during payment,technical
+588,My reservation disappeared from the system,booking
+589,The website keeps showing server errors,technical
+590,Refund has not been processed,billing
+591,System error while confirming reservation,technical
+592,The room had a bad smell,cleanliness
+593,The booking website crashed during payment,technical
+594,Reception staff behaved unprofessionally,service
+595,Payment was deducted but booking not confirmed,billing
+596,Bedsheets were dirty,cleanliness
+597,Bathroom hygiene was unacceptable,cleanliness
+598,Refund has not been processed,billing
+599,Unable to access my account,technical
+600,The invoice amount is incorrect,billing
+601,I was charged twice for my reservation,billing
+602,Unable to access my account,technical
+603,I was charged twice for my reservation,billing
+604,My request was ignored by the service team,service
+605,Reception staff behaved unprofessionally,service
+606,I received the wrong booking dates,booking
+607,The room had a bad smell,cleanliness
+608,Bathroom hygiene was unacceptable,cleanliness
+609,My reservation disappeared from the system,booking
+610,Booking confirmation email never arrived,booking
+611,I received the wrong booking dates,booking
+612,Unexpected charges appeared on my bill,billing
+613,Reception staff behaved unprofessionally,service
+614,Room booking was not confirmed,booking
+615,The booking website crashed during payment,technical
+616,The website keeps showing server errors,technical
+617,The booking website crashed during payment,technical
+618,I received the wrong booking dates,booking
+619,The staff was not helpful during check-in,service
+620,My reservation disappeared from the system,booking
+621,My request was ignored by the service team,service
+622,I was charged twice for my reservation,billing
+623,Mobile app is not loading properly,technical
+624,My request was ignored by the service team,service
+625,The staff was not helpful during check-in,service
+626,Bathroom hygiene was unacceptable,cleanliness
+627,Bathroom hygiene was unacceptable,cleanliness
+628,The response from support was very slow,service
+629,My request was ignored by the service team,service
+630,Unexpected charges appeared on my bill,billing
+631,Customer service did not respond to my request,service
+632,Bedsheets were dirty,cleanliness
+633,The staff was not helpful during check-in,service
+634,The invoice amount is incorrect,billing
+635,Unexpected charges appeared on my bill,billing
+636,My request was ignored by the service team,service
+637,The booking website crashed during payment,technical
+638,The response from support was very slow,service
+639,The invoice amount is incorrect,billing
+640,Booking confirmation email never arrived,booking
+641,I was charged twice for my reservation,billing
+642,Reservation details were incorrect,booking
+643,The website keeps showing server errors,technical
+644,The hotel room was not clean,cleanliness
+645,Booking confirmation email never arrived,booking
+646,My request was ignored by the service team,service
+647,Payment was deducted but booking not confirmed,billing
+648,Unable to access my account,technical
+649,I was charged twice for my reservation,billing
+650,Reservation details were incorrect,booking
+651,My reservation disappeared from the system,booking
+652,Reservation details were incorrect,booking
+653,I was charged twice for my reservation,billing
+654,The website keeps showing server errors,technical
+655,The staff was not helpful during check-in,service
+656,The response from support was very slow,service
+657,Housekeeping did not clean the room,cleanliness
+658,Bedsheets were dirty,cleanliness
+659,Booking confirmation email never arrived,booking
+660,Bedsheets were dirty,cleanliness
+661,Booking confirmation email never arrived,booking
+662,The room had a bad smell,cleanliness
+663,I was charged twice for my reservation,billing
+664,Bathroom hygiene was unacceptable,cleanliness
+665,Reservation details were incorrect,booking
+666,Reception staff behaved unprofessionally,service
+667,Unable to access my account,technical
+668,Reservation details were incorrect,booking
+669,Unexpected charges appeared on my bill,billing
+670,I received the wrong booking dates,booking
+671,System error while confirming reservation,technical
+672,Reception staff behaved unprofessionally,service
+673,I was charged twice for my reservation,billing
+674,I was charged twice for my reservation,billing
+675,My reservation disappeared from the system,booking
+676,Mobile app is not loading properly,technical
+677,The hotel room was not clean,cleanliness
+678,Housekeeping did not clean the room,cleanliness
+679,Bedsheets were dirty,cleanliness
+680,Refund has not been processed,billing
+681,Unable to access my account,technical
+682,Unexpected charges appeared on my bill,billing
+683,Bedsheets were dirty,cleanliness
+684,The booking website crashed during payment,technical
+685,Housekeeping did not clean the room,cleanliness
+686,Customer service did not respond to my request,service
+687,Room booking was not confirmed,booking
+688,Unexpected charges appeared on my bill,billing
+689,Bedsheets were dirty,cleanliness
+690,Unexpected charges appeared on my bill,billing
+691,Bathroom hygiene was unacceptable,cleanliness
+692,Booking confirmation email never arrived,booking
+693,Housekeeping did not clean the room,cleanliness
+694,The hotel room was not clean,cleanliness
+695,Bedsheets were dirty,cleanliness
+696,The invoice amount is incorrect,billing
+697,System error while confirming reservation,technical
+698,System error while confirming reservation,technical
+699,The invoice amount is incorrect,billing
+700,My request was ignored by the service team,service
+701,My reservation disappeared from the system,booking
+702,The staff was not helpful during check-in,service
+703,Payment was deducted but booking not confirmed,billing
+704,Reception staff behaved unprofessionally,service
+705,Reservation details were incorrect,booking
+706,Mobile app is not loading properly,technical
+707,System error while confirming reservation,technical
+708,The website keeps showing server errors,technical
+709,The hotel room was not clean,cleanliness
+710,The invoice amount is incorrect,billing
+711,My request was ignored by the service team,service
+712,I was charged twice for my reservation,billing
+713,Unable to access my account,technical
+714,Reservation details were incorrect,booking
+715,The room had a bad smell,cleanliness
+716,I received the wrong booking dates,booking
+717,My request was ignored by the service team,service
+718,Unexpected charges appeared on my bill,billing
+719,My reservation disappeared from the system,booking
+720,The website keeps showing server errors,technical
+721,Booking confirmation email never arrived,booking
+722,The booking website crashed during payment,technical
+723,Reception staff behaved unprofessionally,service
+724,The hotel room was not clean,cleanliness
+725,The invoice amount is incorrect,billing
+726,Mobile app is not loading properly,technical
+727,The response from support was very slow,service
+728,System error while confirming reservation,technical
+729,I was charged twice for my reservation,billing
+730,Reservation details were incorrect,booking
+731,Customer service did not respond to my request,service
+732,Booking confirmation email never arrived,booking
+733,My request was ignored by the service team,service
+734,Bedsheets were dirty,cleanliness
+735,Refund has not been processed,billing
+736,Refund has not been processed,billing
+737,Refund has not been processed,billing
+738,Unexpected charges appeared on my bill,billing
+739,The room had a bad smell,cleanliness
+740,The room had a bad smell,cleanliness
+741,I received the wrong booking dates,booking
+742,Refund has not been processed,billing
+743,Unexpected charges appeared on my bill,billing
+744,My request was ignored by the service team,service
+745,I received the wrong booking dates,booking
+746,Refund has not been processed,billing
+747,The invoice amount is incorrect,billing
+748,Booking confirmation email never arrived,booking
+749,Booking confirmation email never arrived,booking
+750,Refund has not been processed,billing
+751,System error while confirming reservation,technical
+752,The response from support was very slow,service
+753,The staff was not helpful during check-in,service
+754,The hotel room was not clean,cleanliness
+755,Housekeeping did not clean the room,cleanliness
+756,The response from support was very slow,service
+757,Mobile app is not loading properly,technical
+758,The staff was not helpful during check-in,service
+759,The response from support was very slow,service
+760,Customer service did not respond to my request,service
+761,Bathroom hygiene was unacceptable,cleanliness
+762,The invoice amount is incorrect,billing
+763,Reservation details were incorrect,booking
+764,Housekeeping did not clean the room,cleanliness
+765,Booking confirmation email never arrived,booking
+766,Bedsheets were dirty,cleanliness
+767,Mobile app is not loading properly,technical
+768,My reservation disappeared from the system,booking
+769,Reservation details were incorrect,booking
+770,System error while confirming reservation,technical
+771,The hotel room was not clean,cleanliness
+772,The website keeps showing server errors,technical
+773,Unexpected charges appeared on my bill,billing
+774,Reservation details were incorrect,booking
+775,I was charged twice for my reservation,billing
+776,System error while confirming reservation,technical
+777,I was charged twice for my reservation,billing
+778,Housekeeping did not clean the room,cleanliness
+779,The room had a bad smell,cleanliness
+780,Booking confirmation email never arrived,booking
+781,The hotel room was not clean,cleanliness
+782,Booking confirmation email never arrived,booking
+783,The response from support was very slow,service
+784,The room had a bad smell,cleanliness
+785,Bathroom hygiene was unacceptable,cleanliness
+786,Refund has not been processed,billing
+787,Unexpected charges appeared on my bill,billing
+788,Payment was deducted but booking not confirmed,billing
+789,The staff was not helpful during check-in,service
+790,Reception staff behaved unprofessionally,service
+791,Booking confirmation email never arrived,booking
+792,Housekeeping did not clean the room,cleanliness
+793,The response from support was very slow,service
+794,System error while confirming reservation,technical
+795,Reservation details were incorrect,booking
+796,The website keeps showing server errors,technical
+797,Unexpected charges appeared on my bill,billing
+798,Unexpected charges appeared on my bill,billing
+799,Payment was deducted but booking not confirmed,billing
+800,I received the wrong booking dates,booking
+801,The website keeps showing server errors,technical
+802,The response from support was very slow,service
+803,Payment was deducted but booking not confirmed,billing
+804,The response from support was very slow,service
+805,Unable to access my account,technical
+806,My request was ignored by the service team,service
+807,Unexpected charges appeared on my bill,billing
+808,The room had a bad smell,cleanliness
+809,Mobile app is not loading properly,technical
+810,The hotel room was not clean,cleanliness
+811,Booking confirmation email never arrived,booking
+812,The booking website crashed during payment,technical
+813,System error while confirming reservation,technical
+814,Customer service did not respond to my request,service
+815,Unable to access my account,technical
+816,Customer service did not respond to my request,service
+817,Customer service did not respond to my request,service
+818,Unexpected charges appeared on my bill,billing
+819,Payment was deducted but booking not confirmed,billing
+820,Housekeeping did not clean the room,cleanliness
+821,Unexpected charges appeared on my bill,billing
+822,Bathroom hygiene was unacceptable,cleanliness
+823,The room had a bad smell,cleanliness
+824,Customer service did not respond to my request,service
+825,My request was ignored by the service team,service
+826,Reception staff behaved unprofessionally,service
+827,Refund has not been processed,billing
+828,Mobile app is not loading properly,technical
+829,Booking confirmation email never arrived,booking
+830,Unable to access my account,technical
+831,My request was ignored by the service team,service
+832,The response from support was very slow,service
+833,Room booking was not confirmed,booking
+834,The website keeps showing server errors,technical
+835,Reservation details were incorrect,booking
+836,Unable to access my account,technical
+837,Housekeeping did not clean the room,cleanliness
+838,Room booking was not confirmed,booking
+839,My request was ignored by the service team,service
+840,The response from support was very slow,service
+841,Refund has not been processed,billing
+842,The website keeps showing server errors,technical
+843,Payment was deducted but booking not confirmed,billing
+844,Unexpected charges appeared on my bill,billing
+845,The invoice amount is incorrect,billing
+846,Unable to access my account,technical
+847,Bathroom hygiene was unacceptable,cleanliness
+848,My reservation disappeared from the system,booking
+849,Reception staff behaved unprofessionally,service
+850,The booking website crashed during payment,technical
+851,My reservation disappeared from the system,booking
+852,Booking confirmation email never arrived,booking
+853,Mobile app is not loading properly,technical
+854,My reservation disappeared from the system,booking
+855,Mobile app is not loading properly,technical
+856,Unexpected charges appeared on my bill,billing
+857,Unexpected charges appeared on my bill,billing
+858,Customer service did not respond to my request,service
+859,Unexpected charges appeared on my bill,billing
+860,Room booking was not confirmed,booking
+861,Reservation details were incorrect,booking
+862,The hotel room was not clean,cleanliness
+863,I was charged twice for my reservation,billing
+864,Mobile app is not loading properly,technical
+865,My request was ignored by the service team,service
+866,Housekeeping did not clean the room,cleanliness
+867,My reservation disappeared from the system,booking
+868,Mobile app is not loading properly,technical
+869,The booking website crashed during payment,technical
+870,The invoice amount is incorrect,billing
+871,Booking confirmation email never arrived,booking
+872,My reservation disappeared from the system,booking
+873,Refund has not been processed,billing
+874,Housekeeping did not clean the room,cleanliness
+875,Payment was deducted but booking not confirmed,billing
+876,Bathroom hygiene was unacceptable,cleanliness
+877,The response from support was very slow,service
+878,My reservation disappeared from the system,booking
+879,Bedsheets were dirty,cleanliness
+880,My request was ignored by the service team,service
+881,Room booking was not confirmed,booking
+882,Payment was deducted but booking not confirmed,billing
+883,The booking website crashed during payment,technical
+884,Housekeeping did not clean the room,cleanliness
+885,Housekeeping did not clean the room,cleanliness
+886,The hotel room was not clean,cleanliness
+887,Reservation details were incorrect,booking
+888,Refund has not been processed,billing
+889,System error while confirming reservation,technical
+890,Unexpected charges appeared on my bill,billing
+891,Unexpected charges appeared on my bill,billing
+892,The staff was not helpful during check-in,service
+893,Bedsheets were dirty,cleanliness
+894,The staff was not helpful during check-in,service
+895,The website keeps showing server errors,technical
+896,Mobile app is not loading properly,technical
+897,Reservation details were incorrect,booking
+898,Customer service did not respond to my request,service
+899,Refund has not been processed,billing
+900,Unexpected charges appeared on my bill,billing
+901,The staff was not helpful during check-in,service
+902,The staff was not helpful during check-in,service
+903,System error while confirming reservation,technical
+904,The room had a bad smell,cleanliness
+905,The room had a bad smell,cleanliness
+906,The booking website crashed during payment,technical
+907,The response from support was very slow,service
+908,The booking website crashed during payment,technical
+909,System error while confirming reservation,technical
+910,Unexpected charges appeared on my bill,billing
+911,Reservation details were incorrect,booking
+912,Reservation details were incorrect,booking
+913,Mobile app is not loading properly,technical
+914,Reservation details were incorrect,booking
+915,The website keeps showing server errors,technical
+916,The booking website crashed during payment,technical
+917,My reservation disappeared from the system,booking
+918,Booking confirmation email never arrived,booking
+919,My request was ignored by the service team,service
+920,System error while confirming reservation,technical
+921,I was charged twice for my reservation,billing
+922,System error while confirming reservation,technical
+923,Unable to access my account,technical
+924,The room had a bad smell,cleanliness
+925,Reception staff behaved unprofessionally,service
+926,Unable to access my account,technical
+927,Unexpected charges appeared on my bill,billing
+928,The room had a bad smell,cleanliness
+929,The booking website crashed during payment,technical
+930,Refund has not been processed,billing
+931,The website keeps showing server errors,technical
+932,The staff was not helpful during check-in,service
+933,My request was ignored by the service team,service
+934,My reservation disappeared from the system,booking
+935,The staff was not helpful during check-in,service
+936,The response from support was very slow,service
+937,Unable to access my account,technical
+938,The hotel room was not clean,cleanliness
+939,Bathroom hygiene was unacceptable,cleanliness
+940,I received the wrong booking dates,booking
+941,Unable to access my account,technical
+942,Payment was deducted but booking not confirmed,billing
+943,My request was ignored by the service team,service
+944,Unable to access my account,technical
+945,System error while confirming reservation,technical
+946,The staff was not helpful during check-in,service
+947,The invoice amount is incorrect,billing
+948,Booking confirmation email never arrived,booking
+949,Booking confirmation email never arrived,booking
+950,Unexpected charges appeared on my bill,billing
+951,Unable to access my account,technical
+952,My request was ignored by the service team,service
+953,Unable to access my account,technical
+954,The staff was not helpful during check-in,service
+955,The staff was not helpful during check-in,service
+956,Room booking was not confirmed,booking
+957,My reservation disappeared from the system,booking
+958,System error while confirming reservation,technical
+959,Payment was deducted but booking not confirmed,billing
+960,Bedsheets were dirty,cleanliness
+961,Mobile app is not loading properly,technical
+962,The response from support was very slow,service
+963,Bathroom hygiene was unacceptable,cleanliness
+964,The invoice amount is incorrect,billing
+965,Customer service did not respond to my request,service
+966,My reservation disappeared from the system,booking
+967,The website keeps showing server errors,technical
+968,Bedsheets were dirty,cleanliness
+969,Booking confirmation email never arrived,booking
+970,My request was ignored by the service team,service
+971,I was charged twice for my reservation,billing
+972,Unable to access my account,technical
+973,Booking confirmation email never arrived,booking
+974,Reservation details were incorrect,booking
+975,The hotel room was not clean,cleanliness
+976,The response from support was very slow,service
+977,Refund has not been processed,billing
+978,Booking confirmation email never arrived,booking
+979,Mobile app is not loading properly,technical
+980,Housekeeping did not clean the room,cleanliness
+981,Customer service did not respond to my request,service
+982,Booking confirmation email never arrived,booking
+983,I was charged twice for my reservation,billing
+984,Bathroom hygiene was unacceptable,cleanliness
+985,Mobile app is not loading properly,technical
+986,The response from support was very slow,service
+987,The response from support was very slow,service
+988,Bedsheets were dirty,cleanliness
+989,Unexpected charges appeared on my bill,billing
+990,My request was ignored by the service team,service
+991,Mobile app is not loading properly,technical
+992,The website keeps showing server errors,technical
+993,The hotel room was not clean,cleanliness
+994,Bathroom hygiene was unacceptable,cleanliness
+995,Housekeeping did not clean the room,cleanliness
+996,Customer service did not respond to my request,service
+997,Housekeeping did not clean the room,cleanliness
+998,The website keeps showing server errors,technical
+999,I was charged twice for my reservation,billing
+1000,I was charged twice for my reservation,billing
+1001,Bedsheets were dirty,cleanliness
+1002,My request was ignored by the service team,service
+1003,Booking confirmation email never arrived,booking
+1004,Refund has not been processed,billing
+1005,Bedsheets were dirty,cleanliness
+1006,Unable to access my account,technical
+1007,Reception staff behaved unprofessionally,service
+1008,Unable to access my account,technical
+1009,I was charged twice for my reservation,billing
+1010,Reception staff behaved unprofessionally,service
+1011,Reservation details were incorrect,booking
+1012,Room booking was not confirmed,booking
+1013,The website keeps showing server errors,technical
+1014,The response from support was very slow,service
+1015,System error while confirming reservation,technical
+1016,Room booking was not confirmed,booking
+1017,The website keeps showing server errors,technical
+1018,The hotel room was not clean,cleanliness
+1019,Mobile app is not loading properly,technical
+1020,My reservation disappeared from the system,booking
+1021,Unable to access my account,technical
+1022,Customer service did not respond to my request,service
+1023,I was charged twice for my reservation,billing
+1024,Unable to access my account,technical
+1025,The room had a bad smell,cleanliness
+1026,Customer service did not respond to my request,service
+1027,The website keeps showing server errors,technical
+1028,Mobile app is not loading properly,technical
+1029,Reception staff behaved unprofessionally,service
+1030,The room had a bad smell,cleanliness
+1031,I received the wrong booking dates,booking
+1032,My reservation disappeared from the system,booking
+1033,Refund has not been processed,billing
+1034,The room had a bad smell,cleanliness
+1035,Customer service did not respond to my request,service
+1036,Bedsheets were dirty,cleanliness
+1037,I was charged twice for my reservation,billing
+1038,Unable to access my account,technical
+1039,The room had a bad smell,cleanliness
+1040,The website keeps showing server errors,technical
+1041,I was charged twice for my reservation,billing
+1042,Room booking was not confirmed,booking
+1043,System error while confirming reservation,technical
+1044,I received the wrong booking dates,booking
+1045,Refund has not been processed,billing
+1046,Payment was deducted but booking not confirmed,billing
+1047,Bathroom hygiene was unacceptable,cleanliness
+1048,The website keeps showing server errors,technical
+1049,The booking website crashed during payment,technical
+1050,Booking confirmation email never arrived,booking
+1051,Booking confirmation email never arrived,booking
+1052,The website keeps showing server errors,technical
+1053,The hotel room was not clean,cleanliness
+1054,The staff was not helpful during check-in,service
+1055,I received the wrong booking dates,booking
+1056,The website keeps showing server errors,technical
+1057,Mobile app is not loading properly,technical
+1058,My request was ignored by the service team,service
+1059,The room had a bad smell,cleanliness
+1060,The hotel room was not clean,cleanliness
+1061,I was charged twice for my reservation,billing
+1062,The response from support was very slow,service
+1063,Booking confirmation email never arrived,booking
+1064,Room booking was not confirmed,booking
+1065,Housekeeping did not clean the room,cleanliness
+1066,The response from support was very slow,service
+1067,Bedsheets were dirty,cleanliness
+1068,Reception staff behaved unprofessionally,service
+1069,Bedsheets were dirty,cleanliness
+1070,Bedsheets were dirty,cleanliness
+1071,Housekeeping did not clean the room,cleanliness
+1072,The room had a bad smell,cleanliness
+1073,Bedsheets were dirty,cleanliness
+1074,My reservation disappeared from the system,booking
+1075,System error while confirming reservation,technical
+1076,Refund has not been processed,billing
+1077,Bedsheets were dirty,cleanliness
+1078,Payment was deducted but booking not confirmed,billing
+1079,I received the wrong booking dates,booking
+1080,Housekeeping did not clean the room,cleanliness
+1081,The staff was not helpful during check-in,service
+1082,The room had a bad smell,cleanliness
+1083,My request was ignored by the service team,service
+1084,The room had a bad smell,cleanliness
+1085,Customer service did not respond to my request,service
+1086,Payment was deducted but booking not confirmed,billing
+1087,The invoice amount is incorrect,billing
+1088,Refund has not been processed,billing
+1089,Unable to access my account,technical
+1090,Reception staff behaved unprofessionally,service
+1091,Reception staff behaved unprofessionally,service
+1092,Housekeeping did not clean the room,cleanliness
+1093,My reservation disappeared from the system,booking
+1094,My request was ignored by the service team,service
+1095,My request was ignored by the service team,service
+1096,Unable to access my account,technical
+1097,The room had a bad smell,cleanliness
+1098,Mobile app is not loading properly,technical
+1099,Booking confirmation email never arrived,booking
+1100,The website keeps showing server errors,technical
+1101,System error while confirming reservation,technical
+1102,The room had a bad smell,cleanliness
+1103,Customer service did not respond to my request,service
+1104,The website keeps showing server errors,technical
+1105,Mobile app is not loading properly,technical
+1106,System error while confirming reservation,technical
+1107,Reception staff behaved unprofessionally,service
+1108,Unable to access my account,technical
+1109,The website keeps showing server errors,technical
+1110,System error while confirming reservation,technical
+1111,Payment was deducted but booking not confirmed,billing
+1112,The room had a bad smell,cleanliness
+1113,I received the wrong booking dates,booking
+1114,The response from support was very slow,service
+1115,Unexpected charges appeared on my bill,billing
+1116,Unexpected charges appeared on my bill,billing
+1117,I received the wrong booking dates,booking
+1118,Room booking was not confirmed,booking
+1119,My request was ignored by the service team,service
+1120,The website keeps showing server errors,technical
+1121,Mobile app is not loading properly,technical
+1122,Payment was deducted but booking not confirmed,billing
+1123,Bathroom hygiene was unacceptable,cleanliness
+1124,The staff was not helpful during check-in,service
+1125,Bathroom hygiene was unacceptable,cleanliness
+1126,The staff was not helpful during check-in,service
+1127,Refund has not been processed,billing
+1128,Unable to access my account,technical
+1129,The invoice amount is incorrect,billing
+1130,Payment was deducted but booking not confirmed,billing
+1131,Reception staff behaved unprofessionally,service
+1132,Reservation details were incorrect,booking
+1133,The response from support was very slow,service
+1134,System error while confirming reservation,technical
+1135,I was charged twice for my reservation,billing
+1136,Bathroom hygiene was unacceptable,cleanliness
+1137,The hotel room was not clean,cleanliness
+1138,Reception staff behaved unprofessionally,service
+1139,The staff was not helpful during check-in,service
+1140,Reservation details were incorrect,booking
+1141,The response from support was very slow,service
+1142,I was charged twice for my reservation,billing
+1143,The website keeps showing server errors,technical
+1144,The hotel room was not clean,cleanliness
+1145,System error while confirming reservation,technical
+1146,Booking confirmation email never arrived,booking
+1147,The room had a bad smell,cleanliness
+1148,My request was ignored by the service team,service
+1149,I received the wrong booking dates,booking
+1150,The staff was not helpful during check-in,service
+1151,Mobile app is not loading properly,technical
+1152,I received the wrong booking dates,booking
+1153,The staff was not helpful during check-in,service
+1154,System error while confirming reservation,technical
+1155,Bathroom hygiene was unacceptable,cleanliness
+1156,My request was ignored by the service team,service
+1157,Reservation details were incorrect,booking
+1158,Bedsheets were dirty,cleanliness
+1159,Refund has not been processed,billing
+1160,The invoice amount is incorrect,billing
+1161,Reception staff behaved unprofessionally,service
+1162,Mobile app is not loading properly,technical
+1163,Unexpected charges appeared on my bill,billing
+1164,Room booking was not confirmed,booking
+1165,I received the wrong booking dates,booking
+1166,System error while confirming reservation,technical
+1167,Housekeeping did not clean the room,cleanliness
+1168,Unexpected charges appeared on my bill,billing
+1169,Mobile app is not loading properly,technical
+1170,I was charged twice for my reservation,billing
+1171,I received the wrong booking dates,booking
+1172,Reception staff behaved unprofessionally,service
+1173,Bedsheets were dirty,cleanliness
+1174,Unexpected charges appeared on my bill,billing
+1175,The website keeps showing server errors,technical
+1176,Customer service did not respond to my request,service
+1177,Reception staff behaved unprofessionally,service
+1178,Reception staff behaved unprofessionally,service
+1179,Bedsheets were dirty,cleanliness
+1180,Booking confirmation email never arrived,booking
+1181,Booking confirmation email never arrived,booking
+1182,Customer service did not respond to my request,service
+1183,The hotel room was not clean,cleanliness
+1184,The room had a bad smell,cleanliness
+1185,Bedsheets were dirty,cleanliness
+1186,Payment was deducted but booking not confirmed,billing
+1187,I was charged twice for my reservation,billing
+1188,Housekeeping did not clean the room,cleanliness
+1189,My request was ignored by the service team,service
+1190,Bathroom hygiene was unacceptable,cleanliness
+1191,The response from support was very slow,service
+1192,The room had a bad smell,cleanliness
+1193,The invoice amount is incorrect,billing
+1194,The room had a bad smell,cleanliness
+1195,Payment was deducted but booking not confirmed,billing
+1196,My reservation disappeared from the system,booking
+1197,Room booking was not confirmed,booking
+1198,The room had a bad smell,cleanliness
+1199,Booking confirmation email never arrived,booking
+1200,Payment was deducted but booking not confirmed,billing
+1201,I received the wrong booking dates,booking
+1202,Refund has not been processed,billing
+1203,The booking website crashed during payment,technical
+1204,My request was ignored by the service team,service
+1205,I was charged twice for my reservation,billing
+1206,I received the wrong booking dates,booking
+1207,Payment was deducted but booking not confirmed,billing
+1208,I was charged twice for my reservation,billing
+1209,My reservation disappeared from the system,booking
+1210,Unable to access my account,technical
+1211,Customer service did not respond to my request,service
+1212,I received the wrong booking dates,booking
+1213,Reservation details were incorrect,booking
+1214,Reservation details were incorrect,booking
+1215,Payment was deducted but booking not confirmed,billing
+1216,The response from support was very slow,service
+1217,The invoice amount is incorrect,billing
+1218,The room had a bad smell,cleanliness
+1219,Bathroom hygiene was unacceptable,cleanliness
+1220,The staff was not helpful during check-in,service
+1221,Unexpected charges appeared on my bill,billing
+1222,Booking confirmation email never arrived,booking
+1223,Booking confirmation email never arrived,booking
+1224,Room booking was not confirmed,booking
+1225,Reception staff behaved unprofessionally,service
+1226,Mobile app is not loading properly,technical
+1227,Mobile app is not loading properly,technical
+1228,I was charged twice for my reservation,billing
+1229,Booking confirmation email never arrived,booking
+1230,The invoice amount is incorrect,billing
+1231,The staff was not helpful during check-in,service
+1232,Payment was deducted but booking not confirmed,billing
+1233,Refund has not been processed,billing
+1234,The hotel room was not clean,cleanliness
+1235,The staff was not helpful during check-in,service
+1236,Reservation details were incorrect,booking
+1237,My request was ignored by the service team,service
+1238,The staff was not helpful during check-in,service
+1239,My request was ignored by the service team,service
+1240,Mobile app is not loading properly,technical
+1241,Bedsheets were dirty,cleanliness
+1242,Housekeeping did not clean the room,cleanliness
+1243,Mobile app is not loading properly,technical
+1244,Mobile app is not loading properly,technical
+1245,Bathroom hygiene was unacceptable,cleanliness
+1246,I received the wrong booking dates,booking
+1247,The booking website crashed during payment,technical
+1248,Housekeeping did not clean the room,cleanliness
+1249,Reception staff behaved unprofessionally,service
+1250,The room had a bad smell,cleanliness
+1251,Unexpected charges appeared on my bill,billing
+1252,Booking confirmation email never arrived,booking
+1253,Unable to access my account,technical
+1254,Room booking was not confirmed,booking
+1255,Unable to access my account,technical
+1256,My request was ignored by the service team,service
+1257,Room booking was not confirmed,booking
+1258,The response from support was very slow,service
+1259,Reception staff behaved unprofessionally,service
+1260,Payment was deducted but booking not confirmed,billing
+1261,Reservation details were incorrect,booking
+1262,Housekeeping did not clean the room,cleanliness
+1263,Reception staff behaved unprofessionally,service
+1264,The response from support was very slow,service
+1265,The response from support was very slow,service
+1266,Refund has not been processed,billing
+1267,The booking website crashed during payment,technical
+1268,Bathroom hygiene was unacceptable,cleanliness
+1269,Unexpected charges appeared on my bill,billing
+1270,Booking confirmation email never arrived,booking
+1271,The hotel room was not clean,cleanliness
+1272,The invoice amount is incorrect,billing
+1273,Housekeeping did not clean the room,cleanliness
+1274,Reception staff behaved unprofessionally,service
+1275,The response from support was very slow,service
+1276,The booking website crashed during payment,technical
+1277,Customer service did not respond to my request,service
+1278,Refund has not been processed,billing
+1279,My request was ignored by the service team,service
+1280,Reception staff behaved unprofessionally,service
+1281,My request was ignored by the service team,service
+1282,System error while confirming reservation,technical
+1283,Reservation details were incorrect,booking
+1284,Bedsheets were dirty,cleanliness
+1285,System error while confirming reservation,technical
+1286,The website keeps showing server errors,technical
+1287,Reservation details were incorrect,booking
+1288,Refund has not been processed,billing
+1289,Mobile app is not loading properly,technical
+1290,System error while confirming reservation,technical
+1291,My reservation disappeared from the system,booking
+1292,Bathroom hygiene was unacceptable,cleanliness
+1293,The staff was not helpful during check-in,service
+1294,The website keeps showing server errors,technical
+1295,Housekeeping did not clean the room,cleanliness
+1296,I received the wrong booking dates,booking
+1297,Customer service did not respond to my request,service
+1298,Mobile app is not loading properly,technical
+1299,Booking confirmation email never arrived,booking
+1300,Reception staff behaved unprofessionally,service
+1301,Bedsheets were dirty,cleanliness
+1302,Unable to access my account,technical
+1303,Reservation details were incorrect,booking
+1304,The response from support was very slow,service
+1305,Customer service did not respond to my request,service
+1306,The room had a bad smell,cleanliness
+1307,My request was ignored by the service team,service
+1308,Payment was deducted but booking not confirmed,billing
+1309,I was charged twice for my reservation,billing
+1310,I was charged twice for my reservation,billing
+1311,Room booking was not confirmed,booking
+1312,The staff was not helpful during check-in,service
+1313,The staff was not helpful during check-in,service
+1314,My request was ignored by the service team,service
+1315,I received the wrong booking dates,booking
+1316,Payment was deducted but booking not confirmed,billing
+1317,The room had a bad smell,cleanliness
+1318,My reservation disappeared from the system,booking
+1319,Payment was deducted but booking not confirmed,billing
+1320,The room had a bad smell,cleanliness
+1321,I was charged twice for my reservation,billing
+1322,Bedsheets were dirty,cleanliness
+1323,Bedsheets were dirty,cleanliness
+1324,Payment was deducted but booking not confirmed,billing
+1325,Room booking was not confirmed,booking
+1326,I was charged twice for my reservation,billing
+1327,Bathroom hygiene was unacceptable,cleanliness
+1328,Customer service did not respond to my request,service
+1329,Housekeeping did not clean the room,cleanliness
+1330,System error while confirming reservation,technical
+1331,Unable to access my account,technical
+1332,Unexpected charges appeared on my bill,billing
+1333,Reservation details were incorrect,booking
+1334,Bathroom hygiene was unacceptable,cleanliness
+1335,The response from support was very slow,service
+1336,I was charged twice for my reservation,billing
+1337,Refund has not been processed,billing
+1338,Reservation details were incorrect,booking
+1339,The room had a bad smell,cleanliness
+1340,I was charged twice for my reservation,billing
+1341,The staff was not helpful during check-in,service
+1342,Reservation details were incorrect,booking
+1343,The website keeps showing server errors,technical
+1344,Payment was deducted but booking not confirmed,billing
+1345,The invoice amount is incorrect,billing
+1346,My request was ignored by the service team,service
+1347,I received the wrong booking dates,booking
+1348,I was charged twice for my reservation,billing
+1349,The website keeps showing server errors,technical
+1350,The hotel room was not clean,cleanliness
+1351,The response from support was very slow,service
+1352,The invoice amount is incorrect,billing
+1353,Bathroom hygiene was unacceptable,cleanliness
+1354,My reservation disappeared from the system,booking
+1355,Mobile app is not loading properly,technical
+1356,Bathroom hygiene was unacceptable,cleanliness
+1357,The room had a bad smell,cleanliness
+1358,Bedsheets were dirty,cleanliness
+1359,Room booking was not confirmed,booking
+1360,Payment was deducted but booking not confirmed,billing
+1361,The booking website crashed during payment,technical
+1362,Refund has not been processed,billing
+1363,The staff was not helpful during check-in,service
+1364,The website keeps showing server errors,technical
+1365,Housekeeping did not clean the room,cleanliness
+1366,I received the wrong booking dates,booking
+1367,Unexpected charges appeared on my bill,billing
+1368,Reservation details were incorrect,booking
+1369,The response from support was very slow,service
+1370,The room had a bad smell,cleanliness
+1371,Room booking was not confirmed,booking
+1372,The room had a bad smell,cleanliness
+1373,Payment was deducted but booking not confirmed,billing
+1374,Mobile app is not loading properly,technical
+1375,I was charged twice for my reservation,billing
+1376,Mobile app is not loading properly,technical
+1377,Room booking was not confirmed,booking
+1378,I received the wrong booking dates,booking
+1379,The booking website crashed during payment,technical
+1380,I was charged twice for my reservation,billing
+1381,Unable to access my account,technical
+1382,System error while confirming reservation,technical
+1383,The invoice amount is incorrect,billing
+1384,The invoice amount is incorrect,billing
+1385,Reservation details were incorrect,booking
+1386,Housekeeping did not clean the room,cleanliness
+1387,The room had a bad smell,cleanliness
+1388,I was charged twice for my reservation,billing
+1389,Unexpected charges appeared on my bill,billing
+1390,The hotel room was not clean,cleanliness
+1391,Housekeeping did not clean the room,cleanliness
+1392,Unable to access my account,technical
+1393,Unexpected charges appeared on my bill,billing
+1394,Reservation details were incorrect,booking
+1395,Payment was deducted but booking not confirmed,billing
+1396,My request was ignored by the service team,service
+1397,Bathroom hygiene was unacceptable,cleanliness
+1398,Room booking was not confirmed,booking
+1399,The response from support was very slow,service
+1400,System error while confirming reservation,technical
+1401,Room booking was not confirmed,booking
+1402,The invoice amount is incorrect,billing
+1403,I received the wrong booking dates,booking
+1404,I received the wrong booking dates,booking
+1405,My reservation disappeared from the system,booking
+1406,System error while confirming reservation,technical
+1407,Reception staff behaved unprofessionally,service
+1408,Housekeeping did not clean the room,cleanliness
+1409,Reception staff behaved unprofessionally,service
+1410,The invoice amount is incorrect,billing
+1411,The booking website crashed during payment,technical
+1412,I received the wrong booking dates,booking
+1413,The room had a bad smell,cleanliness
+1414,Unable to access my account,technical
+1415,Unable to access my account,technical
+1416,Bathroom hygiene was unacceptable,cleanliness
+1417,System error while confirming reservation,technical
+1418,Bathroom hygiene was unacceptable,cleanliness
+1419,I received the wrong booking dates,booking
+1420,Reception staff behaved unprofessionally,service
+1421,System error while confirming reservation,technical
+1422,Booking confirmation email never arrived,booking
+1423,The response from support was very slow,service
+1424,I received the wrong booking dates,booking
+1425,I received the wrong booking dates,booking
+1426,Payment was deducted but booking not confirmed,billing
+1427,My request was ignored by the service team,service
+1428,Bathroom hygiene was unacceptable,cleanliness
+1429,The hotel room was not clean,cleanliness
+1430,Room booking was not confirmed,booking
+1431,I received the wrong booking dates,booking
+1432,Refund has not been processed,billing
+1433,Room booking was not confirmed,booking
+1434,Mobile app is not loading properly,technical
+1435,Mobile app is not loading properly,technical
+1436,Reservation details were incorrect,booking
+1437,Refund has not been processed,billing
+1438,The room had a bad smell,cleanliness
+1439,The room had a bad smell,cleanliness
+1440,Housekeeping did not clean the room,cleanliness
+1441,Booking confirmation email never arrived,booking
+1442,Unexpected charges appeared on my bill,billing
+1443,Housekeeping did not clean the room,cleanliness
+1444,I was charged twice for my reservation,billing
+1445,The response from support was very slow,service
+1446,My request was ignored by the service team,service
+1447,Payment was deducted but booking not confirmed,billing
+1448,I received the wrong booking dates,booking
+1449,My reservation disappeared from the system,booking
+1450,I was charged twice for my reservation,billing
+1451,Mobile app is not loading properly,technical
+1452,Housekeeping did not clean the room,cleanliness
+1453,Housekeeping did not clean the room,cleanliness
+1454,Bathroom hygiene was unacceptable,cleanliness
+1455,I received the wrong booking dates,booking
+1456,Reservation details were incorrect,booking
+1457,Housekeeping did not clean the room,cleanliness
+1458,The response from support was very slow,service
+1459,Refund has not been processed,billing
+1460,Unexpected charges appeared on my bill,billing
+1461,My reservation disappeared from the system,booking
+1462,The invoice amount is incorrect,billing
+1463,System error while confirming reservation,technical
+1464,Unable to access my account,technical
+1465,My request was ignored by the service team,service
+1466,I received the wrong booking dates,booking
+1467,My reservation disappeared from the system,booking
+1468,Reservation details were incorrect,booking
+1469,The booking website crashed during payment,technical
+1470,The booking website crashed during payment,technical
+1471,I was charged twice for my reservation,billing
+1472,The booking website crashed during payment,technical
+1473,Customer service did not respond to my request,service
+1474,Bathroom hygiene was unacceptable,cleanliness
+1475,Bathroom hygiene was unacceptable,cleanliness
+1476,The website keeps showing server errors,technical
+1477,Reservation details were incorrect,booking
+1478,Reception staff behaved unprofessionally,service
+1479,Customer service did not respond to my request,service
+1480,Reservation details were incorrect,booking
+1481,Payment was deducted but booking not confirmed,billing
+1482,Reception staff behaved unprofessionally,service
+1483,The room had a bad smell,cleanliness
+1484,My reservation disappeared from the system,booking
+1485,Customer service did not respond to my request,service
+1486,The booking website crashed during payment,technical
+1487,The hotel room was not clean,cleanliness
+1488,Bathroom hygiene was unacceptable,cleanliness
+1489,System error while confirming reservation,technical
+1490,Reception staff behaved unprofessionally,service
+1491,Unexpected charges appeared on my bill,billing
+1492,Booking confirmation email never arrived,booking
+1493,The website keeps showing server errors,technical
+1494,Booking confirmation email never arrived,booking
+1495,Booking confirmation email never arrived,booking
+1496,Unexpected charges appeared on my bill,billing
+1497,Unable to access my account,technical
+1498,Bathroom hygiene was unacceptable,cleanliness
+1499,The website keeps showing server errors,technical
+1500,The hotel room was not clean,cleanliness
+1501,The response from support was very slow,service
+1502,The invoice amount is incorrect,billing
+1503,The booking website crashed during payment,technical
+1504,The response from support was very slow,service
+1505,My request was ignored by the service team,service
+1506,Reservation details were incorrect,booking
+1507,Bathroom hygiene was unacceptable,cleanliness
+1508,The room had a bad smell,cleanliness
+1509,Room booking was not confirmed,booking
+1510,Booking confirmation email never arrived,booking
+1511,My request was ignored by the service team,service
+1512,Reception staff behaved unprofessionally,service
+1513,Mobile app is not loading properly,technical
+1514,The response from support was very slow,service
+1515,Booking confirmation email never arrived,booking
+1516,Unexpected charges appeared on my bill,billing
+1517,Refund has not been processed,billing
+1518,Customer service did not respond to my request,service
+1519,Booking confirmation email never arrived,booking
+1520,The room had a bad smell,cleanliness
+1521,Reservation details were incorrect,booking
+1522,Reservation details were incorrect,booking
+1523,Room booking was not confirmed,booking
+1524,Payment was deducted but booking not confirmed,billing
+1525,The invoice amount is incorrect,billing
+1526,The booking website crashed during payment,technical
+1527,Mobile app is not loading properly,technical
+1528,Bedsheets were dirty,cleanliness
+1529,Reception staff behaved unprofessionally,service
+1530,The room had a bad smell,cleanliness
+1531,Housekeeping did not clean the room,cleanliness
+1532,Payment was deducted but booking not confirmed,billing
+1533,Unexpected charges appeared on my bill,billing
+1534,Bedsheets were dirty,cleanliness
+1535,The hotel room was not clean,cleanliness
+1536,Booking confirmation email never arrived,booking
+1537,Reception staff behaved unprofessionally,service
+1538,The invoice amount is incorrect,billing
+1539,The booking website crashed during payment,technical
+1540,I received the wrong booking dates,booking
+1541,The booking website crashed during payment,technical
+1542,My reservation disappeared from the system,booking
+1543,Customer service did not respond to my request,service
+1544,Bedsheets were dirty,cleanliness
+1545,The room had a bad smell,cleanliness
+1546,My request was ignored by the service team,service
+1547,Customer service did not respond to my request,service
+1548,The staff was not helpful during check-in,service
+1549,Bedsheets were dirty,cleanliness
+1550,Bedsheets were dirty,cleanliness
+1551,Housekeeping did not clean the room,cleanliness
+1552,The response from support was very slow,service
+1553,System error while confirming reservation,technical
+1554,Bedsheets were dirty,cleanliness
+1555,The hotel room was not clean,cleanliness
+1556,Reception staff behaved unprofessionally,service
+1557,Unexpected charges appeared on my bill,billing
+1558,Customer service did not respond to my request,service
+1559,Customer service did not respond to my request,service
+1560,Mobile app is not loading properly,technical
+1561,Reservation details were incorrect,booking
+1562,My request was ignored by the service team,service
+1563,Unable to access my account,technical
+1564,Reservation details were incorrect,booking
+1565,I was charged twice for my reservation,billing
+1566,Booking confirmation email never arrived,booking
+1567,System error while confirming reservation,technical
+1568,Reservation details were incorrect,booking
+1569,The website keeps showing server errors,technical
+1570,I was charged twice for my reservation,billing
+1571,I received the wrong booking dates,booking
+1572,Payment was deducted but booking not confirmed,billing
+1573,Room booking was not confirmed,booking
+1574,Room booking was not confirmed,booking
+1575,I received the wrong booking dates,booking
+1576,System error while confirming reservation,technical
+1577,The website keeps showing server errors,technical
+1578,Bathroom hygiene was unacceptable,cleanliness
+1579,The room had a bad smell,cleanliness
+1580,The booking website crashed during payment,technical
+1581,I was charged twice for my reservation,billing
+1582,My reservation disappeared from the system,booking
+1583,The invoice amount is incorrect,billing
+1584,Reservation details were incorrect,booking
+1585,Refund has not been processed,billing
+1586,Customer service did not respond to my request,service
+1587,Mobile app is not loading properly,technical
+1588,The booking website crashed during payment,technical
+1589,System error while confirming reservation,technical
+1590,Unexpected charges appeared on my bill,billing
+1591,The staff was not helpful during check-in,service
+1592,I received the wrong booking dates,booking
+1593,Reception staff behaved unprofessionally,service
+1594,I was charged twice for my reservation,billing
+1595,The invoice amount is incorrect,billing
+1596,My reservation disappeared from the system,booking
+1597,My request was ignored by the service team,service
+1598,My request was ignored by the service team,service
+1599,My reservation disappeared from the system,booking
+1600,Unexpected charges appeared on my bill,billing
+1601,Refund has not been processed,billing
+1602,Reception staff behaved unprofessionally,service
+1603,The invoice amount is incorrect,billing
+1604,My reservation disappeared from the system,booking
+1605,I was charged twice for my reservation,billing
+1606,System error while confirming reservation,technical
+1607,Mobile app is not loading properly,technical
+1608,Room booking was not confirmed,booking
+1609,The staff was not helpful during check-in,service
+1610,Housekeeping did not clean the room,cleanliness
+1611,Payment was deducted but booking not confirmed,billing
+1612,Reception staff behaved unprofessionally,service
+1613,Mobile app is not loading properly,technical
+1614,Reception staff behaved unprofessionally,service
+1615,The room had a bad smell,cleanliness
+1616,The staff was not helpful during check-in,service
+1617,The invoice amount is incorrect,billing
+1618,Payment was deducted but booking not confirmed,billing
+1619,I received the wrong booking dates,booking
+1620,I received the wrong booking dates,booking
+1621,Customer service did not respond to my request,service
+1622,The booking website crashed during payment,technical
+1623,My request was ignored by the service team,service
+1624,Housekeeping did not clean the room,cleanliness
+1625,Bedsheets were dirty,cleanliness
+1626,Unexpected charges appeared on my bill,billing
+1627,My request was ignored by the service team,service
+1628,Housekeeping did not clean the room,cleanliness
+1629,Reception staff behaved unprofessionally,service
+1630,The booking website crashed during payment,technical
+1631,Reception staff behaved unprofessionally,service
+1632,My reservation disappeared from the system,booking
+1633,Reception staff behaved unprofessionally,service
+1634,The hotel room was not clean,cleanliness
+1635,The hotel room was not clean,cleanliness
+1636,System error while confirming reservation,technical
+1637,Reception staff behaved unprofessionally,service
+1638,The room had a bad smell,cleanliness
+1639,The website keeps showing server errors,technical
+1640,Reception staff behaved unprofessionally,service
+1641,I was charged twice for my reservation,billing
+1642,The hotel room was not clean,cleanliness
+1643,Unexpected charges appeared on my bill,billing
+1644,The staff was not helpful during check-in,service
+1645,Refund has not been processed,billing
+1646,Bedsheets were dirty,cleanliness
+1647,The room had a bad smell,cleanliness
+1648,Reservation details were incorrect,booking
+1649,Payment was deducted but booking not confirmed,billing
+1650,Housekeeping did not clean the room,cleanliness
+1651,The response from support was very slow,service
+1652,Unexpected charges appeared on my bill,billing
+1653,Payment was deducted but booking not confirmed,billing
+1654,Customer service did not respond to my request,service
+1655,Bedsheets were dirty,cleanliness
+1656,Booking confirmation email never arrived,booking
+1657,Unexpected charges appeared on my bill,billing
+1658,Room booking was not confirmed,booking
+1659,The invoice amount is incorrect,billing
+1660,Refund has not been processed,billing
+1661,Refund has not been processed,billing
+1662,Housekeeping did not clean the room,cleanliness
+1663,Unexpected charges appeared on my bill,billing
+1664,The staff was not helpful during check-in,service
+1665,The invoice amount is incorrect,billing
+1666,The invoice amount is incorrect,billing
+1667,I received the wrong booking dates,booking
+1668,Housekeeping did not clean the room,cleanliness
+1669,Mobile app is not loading properly,technical
+1670,Mobile app is not loading properly,technical
+1671,The booking website crashed during payment,technical
+1672,Unexpected charges appeared on my bill,billing
+1673,I received the wrong booking dates,booking
+1674,The hotel room was not clean,cleanliness
+1675,The website keeps showing server errors,technical
+1676,Refund has not been processed,billing
+1677,Booking confirmation email never arrived,booking
+1678,The booking website crashed during payment,technical
+1679,Booking confirmation email never arrived,booking
+1680,The response from support was very slow,service
+1681,The response from support was very slow,service
+1682,Payment was deducted but booking not confirmed,billing
+1683,The invoice amount is incorrect,billing
+1684,The hotel room was not clean,cleanliness
+1685,I was charged twice for my reservation,billing
+1686,The staff was not helpful during check-in,service
+1687,I received the wrong booking dates,booking
+1688,Room booking was not confirmed,booking
+1689,The staff was not helpful during check-in,service
+1690,The room had a bad smell,cleanliness
+1691,The response from support was very slow,service
+1692,Reception staff behaved unprofessionally,service
+1693,System error while confirming reservation,technical
+1694,Payment was deducted but booking not confirmed,billing
+1695,The booking website crashed during payment,technical
+1696,The hotel room was not clean,cleanliness
+1697,Customer service did not respond to my request,service
+1698,The hotel room was not clean,cleanliness
+1699,My reservation disappeared from the system,booking
+1700,I received the wrong booking dates,booking
+1701,System error while confirming reservation,technical
+1702,Payment was deducted but booking not confirmed,billing
+1703,My reservation disappeared from the system,booking
+1704,Mobile app is not loading properly,technical
+1705,The website keeps showing server errors,technical
+1706,The website keeps showing server errors,technical
+1707,Reception staff behaved unprofessionally,service
+1708,The website keeps showing server errors,technical
+1709,Room booking was not confirmed,booking
+1710,Bathroom hygiene was unacceptable,cleanliness
+1711,The staff was not helpful during check-in,service
+1712,My reservation disappeared from the system,booking
+1713,My request was ignored by the service team,service
+1714,The booking website crashed during payment,technical
+1715,The booking website crashed during payment,technical
+1716,I received the wrong booking dates,booking
+1717,The invoice amount is incorrect,billing
+1718,Bathroom hygiene was unacceptable,cleanliness
+1719,Reservation details were incorrect,booking
+1720,The invoice amount is incorrect,billing
+1721,The booking website crashed during payment,technical
+1722,The invoice amount is incorrect,billing
+1723,The room had a bad smell,cleanliness
+1724,Unable to access my account,technical
+1725,Payment was deducted but booking not confirmed,billing
+1726,Payment was deducted but booking not confirmed,billing
+1727,Reception staff behaved unprofessionally,service
+1728,Payment was deducted but booking not confirmed,billing
+1729,The hotel room was not clean,cleanliness
+1730,Room booking was not confirmed,booking
+1731,The response from support was very slow,service
+1732,System error while confirming reservation,technical
+1733,I received the wrong booking dates,booking
+1734,Unable to access my account,technical
+1735,Mobile app is not loading properly,technical
+1736,The invoice amount is incorrect,billing
+1737,My request was ignored by the service team,service
+1738,The invoice amount is incorrect,billing
+1739,The invoice amount is incorrect,billing
+1740,Reservation details were incorrect,booking
+1741,Unable to access my account,technical
+1742,Payment was deducted but booking not confirmed,billing
+1743,Mobile app is not loading properly,technical
+1744,I received the wrong booking dates,booking
+1745,I received the wrong booking dates,booking
+1746,I was charged twice for my reservation,billing
+1747,The response from support was very slow,service
+1748,The hotel room was not clean,cleanliness
+1749,The response from support was very slow,service
+1750,The staff was not helpful during check-in,service
+1751,The response from support was very slow,service
+1752,Booking confirmation email never arrived,booking
+1753,Unexpected charges appeared on my bill,billing
+1754,Mobile app is not loading properly,technical
+1755,Refund has not been processed,billing
+1756,Booking confirmation email never arrived,booking
+1757,Bathroom hygiene was unacceptable,cleanliness
+1758,Refund has not been processed,billing
+1759,The invoice amount is incorrect,billing
+1760,I was charged twice for my reservation,billing
+1761,The invoice amount is incorrect,billing
+1762,Customer service did not respond to my request,service
+1763,I received the wrong booking dates,booking
+1764,Payment was deducted but booking not confirmed,billing
+1765,Bedsheets were dirty,cleanliness
+1766,I was charged twice for my reservation,billing
+1767,The invoice amount is incorrect,billing
+1768,Room booking was not confirmed,booking
+1769,Unexpected charges appeared on my bill,billing
+1770,I was charged twice for my reservation,billing
+1771,My reservation disappeared from the system,booking
+1772,My request was ignored by the service team,service
+1773,Reservation details were incorrect,booking
+1774,My reservation disappeared from the system,booking
+1775,Reservation details were incorrect,booking
+1776,The response from support was very slow,service
+1777,Customer service did not respond to my request,service
+1778,System error while confirming reservation,technical
+1779,Room booking was not confirmed,booking
+1780,Payment was deducted but booking not confirmed,billing
+1781,Housekeeping did not clean the room,cleanliness
+1782,The response from support was very slow,service
+1783,Reservation details were incorrect,booking
+1784,The room had a bad smell,cleanliness
+1785,I was charged twice for my reservation,billing
+1786,Unable to access my account,technical
+1787,Reception staff behaved unprofessionally,service
+1788,My request was ignored by the service team,service
+1789,My request was ignored by the service team,service
+1790,Refund has not been processed,billing
+1791,Unable to access my account,technical
+1792,The room had a bad smell,cleanliness
+1793,The website keeps showing server errors,technical
+1794,Bedsheets were dirty,cleanliness
+1795,I received the wrong booking dates,booking
+1796,The staff was not helpful during check-in,service
+1797,The website keeps showing server errors,technical
+1798,The staff was not helpful during check-in,service
+1799,The booking website crashed during payment,technical
+1800,Booking confirmation email never arrived,booking
+1801,The website keeps showing server errors,technical
+1802,Customer service did not respond to my request,service
+1803,The invoice amount is incorrect,billing
+1804,The response from support was very slow,service
+1805,The hotel room was not clean,cleanliness
+1806,My request was ignored by the service team,service
+1807,I received the wrong booking dates,booking
+1808,Customer service did not respond to my request,service
+1809,My request was ignored by the service team,service
+1810,System error while confirming reservation,technical
+1811,The hotel room was not clean,cleanliness
+1812,The website keeps showing server errors,technical
+1813,Bathroom hygiene was unacceptable,cleanliness
+1814,Bathroom hygiene was unacceptable,cleanliness
+1815,Booking confirmation email never arrived,booking
+1816,Mobile app is not loading properly,technical
+1817,My reservation disappeared from the system,booking
+1818,I was charged twice for my reservation,billing
+1819,My request was ignored by the service team,service
+1820,The staff was not helpful during check-in,service
+1821,The room had a bad smell,cleanliness
+1822,Unexpected charges appeared on my bill,billing
+1823,Bathroom hygiene was unacceptable,cleanliness
+1824,The response from support was very slow,service
+1825,The response from support was very slow,service
+1826,I was charged twice for my reservation,billing
+1827,My request was ignored by the service team,service
+1828,The staff was not helpful during check-in,service
+1829,Bedsheets were dirty,cleanliness
+1830,Unexpected charges appeared on my bill,billing
+1831,Booking confirmation email never arrived,booking
+1832,Unexpected charges appeared on my bill,billing
+1833,System error while confirming reservation,technical
+1834,Customer service did not respond to my request,service
+1835,Reservation details were incorrect,booking
+1836,Mobile app is not loading properly,technical
+1837,Housekeeping did not clean the room,cleanliness
+1838,Mobile app is not loading properly,technical
+1839,Bathroom hygiene was unacceptable,cleanliness
+1840,I received the wrong booking dates,booking
+1841,Mobile app is not loading properly,technical
+1842,The staff was not helpful during check-in,service
+1843,The room had a bad smell,cleanliness
+1844,The hotel room was not clean,cleanliness
+1845,My request was ignored by the service team,service
+1846,The website keeps showing server errors,technical
+1847,My request was ignored by the service team,service
+1848,Refund has not been processed,billing
+1849,The response from support was very slow,service
+1850,The invoice amount is incorrect,billing
+1851,System error while confirming reservation,technical
+1852,The staff was not helpful during check-in,service
+1853,Unable to access my account,technical
+1854,Unexpected charges appeared on my bill,billing
+1855,Customer service did not respond to my request,service
+1856,Unexpected charges appeared on my bill,billing
+1857,The booking website crashed during payment,technical
+1858,I was charged twice for my reservation,billing
+1859,Reservation details were incorrect,booking
+1860,Room booking was not confirmed,booking
+1861,Reservation details were incorrect,booking
+1862,I received the wrong booking dates,booking
+1863,The room had a bad smell,cleanliness
+1864,Refund has not been processed,billing
+1865,Bathroom hygiene was unacceptable,cleanliness
+1866,Reception staff behaved unprofessionally,service
+1867,I was charged twice for my reservation,billing
+1868,The booking website crashed during payment,technical
+1869,System error while confirming reservation,technical
+1870,I was charged twice for my reservation,billing
+1871,Mobile app is not loading properly,technical
+1872,Room booking was not confirmed,booking
+1873,Payment was deducted but booking not confirmed,billing
+1874,Unexpected charges appeared on my bill,billing
+1875,Housekeeping did not clean the room,cleanliness
+1876,My reservation disappeared from the system,booking
+1877,Room booking was not confirmed,booking
+1878,The room had a bad smell,cleanliness
+1879,The staff was not helpful during check-in,service
+1880,Unexpected charges appeared on my bill,billing
+1881,Customer service did not respond to my request,service
+1882,Booking confirmation email never arrived,booking
+1883,Bedsheets were dirty,cleanliness
+1884,System error while confirming reservation,technical
+1885,The staff was not helpful during check-in,service
+1886,Refund has not been processed,billing
+1887,Housekeeping did not clean the room,cleanliness
+1888,Room booking was not confirmed,booking
+1889,Unexpected charges appeared on my bill,billing
+1890,Refund has not been processed,billing
+1891,Unexpected charges appeared on my bill,billing
+1892,The room had a bad smell,cleanliness
+1893,The staff was not helpful during check-in,service
+1894,The invoice amount is incorrect,billing
+1895,The response from support was very slow,service
+1896,Refund has not been processed,billing
+1897,Unexpected charges appeared on my bill,billing
+1898,Reservation details were incorrect,booking
+1899,I received the wrong booking dates,booking
+1900,Payment was deducted but booking not confirmed,billing
+1901,Room booking was not confirmed,booking
+1902,Unable to access my account,technical
+1903,Mobile app is not loading properly,technical
+1904,My reservation disappeared from the system,booking
+1905,Unable to access my account,technical
+1906,I received the wrong booking dates,booking
+1907,The response from support was very slow,service
+1908,The hotel room was not clean,cleanliness
+1909,The staff was not helpful during check-in,service
+1910,Unexpected charges appeared on my bill,billing
+1911,The room had a bad smell,cleanliness
+1912,Bathroom hygiene was unacceptable,cleanliness
+1913,The hotel room was not clean,cleanliness
+1914,Booking confirmation email never arrived,booking
+1915,Booking confirmation email never arrived,booking
+1916,Booking confirmation email never arrived,booking
+1917,Reception staff behaved unprofessionally,service
+1918,The booking website crashed during payment,technical
+1919,My reservation disappeared from the system,booking
+1920,Housekeeping did not clean the room,cleanliness
+1921,Housekeeping did not clean the room,cleanliness
+1922,Bathroom hygiene was unacceptable,cleanliness
+1923,Refund has not been processed,billing
+1924,Customer service did not respond to my request,service
+1925,Customer service did not respond to my request,service
+1926,The staff was not helpful during check-in,service
+1927,My reservation disappeared from the system,booking
+1928,Room booking was not confirmed,booking
+1929,My request was ignored by the service team,service
+1930,System error while confirming reservation,technical
+1931,I was charged twice for my reservation,billing
+1932,Booking confirmation email never arrived,booking
+1933,Booking confirmation email never arrived,booking
+1934,System error while confirming reservation,technical
+1935,The room had a bad smell,cleanliness
+1936,Payment was deducted but booking not confirmed,billing
+1937,Housekeeping did not clean the room,cleanliness
+1938,My reservation disappeared from the system,booking
+1939,Room booking was not confirmed,booking
+1940,My request was ignored by the service team,service
+1941,Housekeeping did not clean the room,cleanliness
+1942,I was charged twice for my reservation,billing
+1943,The hotel room was not clean,cleanliness
+1944,The website keeps showing server errors,technical
+1945,Unable to access my account,technical
+1946,Unable to access my account,technical
+1947,Booking confirmation email never arrived,booking
+1948,The room had a bad smell,cleanliness
+1949,The invoice amount is incorrect,billing
+1950,Unable to access my account,technical
+1951,My request was ignored by the service team,service
+1952,The room had a bad smell,cleanliness
+1953,Refund has not been processed,billing
+1954,Mobile app is not loading properly,technical
+1955,Refund has not been processed,billing
+1956,System error while confirming reservation,technical
+1957,Unexpected charges appeared on my bill,billing
+1958,System error while confirming reservation,technical
+1959,Unable to access my account,technical
+1960,The invoice amount is incorrect,billing
+1961,The response from support was very slow,service
+1962,I received the wrong booking dates,booking
+1963,Unable to access my account,technical
+1964,The hotel room was not clean,cleanliness
+1965,Reception staff behaved unprofessionally,service
+1966,Reception staff behaved unprofessionally,service
+1967,Booking confirmation email never arrived,booking
+1968,The booking website crashed during payment,technical
+1969,Bathroom hygiene was unacceptable,cleanliness
+1970,Unexpected charges appeared on my bill,billing
+1971,The room had a bad smell,cleanliness
+1972,My request was ignored by the service team,service
+1973,The hotel room was not clean,cleanliness
+1974,Customer service did not respond to my request,service
+1975,The staff was not helpful during check-in,service
+1976,The staff was not helpful during check-in,service
+1977,My reservation disappeared from the system,booking
+1978,Mobile app is not loading properly,technical
+1979,System error while confirming reservation,technical
+1980,Booking confirmation email never arrived,booking
+1981,My reservation disappeared from the system,booking
+1982,The invoice amount is incorrect,billing
+1983,Unable to access my account,technical
+1984,The room had a bad smell,cleanliness
+1985,Reception staff behaved unprofessionally,service
+1986,Housekeeping did not clean the room,cleanliness
+1987,System error while confirming reservation,technical
+1988,The response from support was very slow,service
+1989,Unexpected charges appeared on my bill,billing
+1990,Refund has not been processed,billing
+1991,The invoice amount is incorrect,billing
+1992,Bathroom hygiene was unacceptable,cleanliness
+1993,Customer service did not respond to my request,service
+1994,The response from support was very slow,service
+1995,Booking confirmation email never arrived,booking
+1996,I was charged twice for my reservation,billing
+1997,Room booking was not confirmed,booking
+1998,My request was ignored by the service team,service
+1999,The invoice amount is incorrect,billing
+2000,The website keeps showing server errors,technical

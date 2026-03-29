@@ -1,0 +1,501 @@
+id,complaint_text
+1,System error while confirming reservation
+2,Reservation details were incorrect
+3,Unable to access my account
+4,Mobile app is not loading properly
+5,I received the wrong booking dates
+6,Housekeeping did not clean the room
+7,Booking confirmation email never arrived
+8,I was charged twice for my reservation
+9,Bedsheets were dirty
+10,Housekeeping did not clean the room
+11,Bedsheets were dirty
+12,The booking website crashed during payment
+13,My reservation disappeared from the system
+14,System error while confirming reservation
+15,System error while confirming reservation
+16,System error while confirming reservation
+17,Customer service did not respond to my request
+18,Bathroom hygiene was unacceptable
+19,Payment was deducted but booking not confirmed
+20,I received the wrong booking dates
+21,The staff was not helpful during check-in
+22,I received the wrong booking dates
+23,Unable to access my account
+24,Reservation details were incorrect
+25,Payment was deducted but booking not confirmed
+26,Bathroom hygiene was unacceptable
+27,Mobile app is not loading properly
+28,The room had a bad smell
+29,The website keeps showing server errors
+30,Mobile app is not loading properly
+31,Bathroom hygiene was unacceptable
+32,The booking website crashed during payment
+33,Room booking was not confirmed
+34,The website keeps showing server errors
+35,The response from support was very slow
+36,The invoice amount is incorrect
+37,Mobile app is not loading properly
+38,Unable to access my account
+39,System error while confirming reservation
+40,The website keeps showing server errors
+41,Unable to access my account
+42,Refund has not been processed
+43,Payment was deducted but booking not confirmed
+44,Housekeeping did not clean the room
+45,Refund has not been processed
+46,My request was ignored by the service team
+47,Refund has not been processed
+48,Bedsheets were dirty
+49,My reservation disappeared from the system
+50,Customer service did not respond to my request
+51,The response from support was very slow
+52,Booking confirmation email never arrived
+53,Room booking was not confirmed
+54,Mobile app is not loading properly
+55,Refund has not been processed
+56,Mobile app is not loading properly
+57,The booking website crashed during payment
+58,Refund has not been processed
+59,Mobile app is not loading properly
+60,My request was ignored by the service team
+61,Reception staff behaved unprofessionally
+62,The invoice amount is incorrect
+63,The room had a bad smell
+64,Reservation details were incorrect
+65,Reservation details were incorrect
+66,My reservation disappeared from the system
+67,Payment was deducted but booking not confirmed
+68,The response from support was very slow
+69,Unexpected charges appeared on my bill
+70,Bathroom hygiene was unacceptable
+71,I was charged twice for my reservation
+72,Customer service did not respond to my request
+73,System error while confirming reservation
+74,The staff was not helpful during check-in
+75,Booking confirmation email never arrived
+76,Bedsheets were dirty
+77,The staff was not helpful during check-in
+78,Unexpected charges appeared on my bill
+79,Unable to access my account
+80,Housekeeping did not clean the room
+81,Bedsheets were dirty
+82,Room booking was not confirmed
+83,Unable to access my account
+84,Mobile app is not loading properly
+85,Reception staff behaved unprofessionally
+86,The invoice amount is incorrect
+87,Customer service did not respond to my request
+88,The staff was not helpful during check-in
+89,Housekeeping did not clean the room
+90,The staff was not helpful during check-in
+91,The booking website crashed during payment
+92,I received the wrong booking dates
+93,Housekeeping did not clean the room
+94,Payment was deducted but booking not confirmed
+95,I was charged twice for my reservation
+96,I was charged twice for my reservation
+97,Refund has not been processed
+98,Reservation details were incorrect
+99,Payment was deducted but booking not confirmed
+100,Unable to access my account
+101,Customer service did not respond to my request
+102,Unexpected charges appeared on my bill
+103,My reservation disappeared from the system
+104,Bedsheets were dirty
+105,Housekeeping did not clean the room
+106,Reception staff behaved unprofessionally
+107,Payment was deducted but booking not confirmed
+108,The hotel room was not clean
+109,The booking website crashed during payment
+110,Refund has not been processed
+111,My request was ignored by the service team
+112,The response from support was very slow
+113,Bathroom hygiene was unacceptable
+114,Unable to access my account
+115,Mobile app is not loading properly
+116,Payment was deducted but booking not confirmed
+117,Room booking was not confirmed
+118,I received the wrong booking dates
+119,The staff was not helpful during check-in
+120,I was charged twice for my reservation
+121,Payment was deducted but booking not confirmed
+122,Room booking was not confirmed
+123,Payment was deducted but booking not confirmed
+124,I was charged twice for my reservation
+125,Mobile app is not loading properly
+126,I received the wrong booking dates
+127,Unable to access my account
+128,I was charged twice for my reservation
+129,The staff was not helpful during check-in
+130,System error while confirming reservation
+131,Unable to access my account
+132,I was charged twice for my reservation
+133,I was charged twice for my reservation
+134,Customer service did not respond to my request
+135,System error while confirming reservation
+136,Booking confirmation email never arrived
+137,The booking website crashed during payment
+138,System error while confirming reservation
+139,The staff was not helpful during check-in
+140,Reservation details were incorrect
+141,I received the wrong booking dates
+142,Reservation details were incorrect
+143,Room booking was not confirmed
+144,The invoice amount is incorrect
+145,The invoice amount is incorrect
+146,Refund has not been processed
+147,The room had a bad smell
+148,The room had a bad smell
+149,My request was ignored by the service team
+150,I received the wrong booking dates
+151,The hotel room was not clean
+152,Reception staff behaved unprofessionally
+153,My reservation disappeared from the system
+154,Reservation details were incorrect
+155,I was charged twice for my reservation
+156,System error while confirming reservation
+157,Payment was deducted but booking not confirmed
+158,Housekeeping did not clean the room
+159,The response from support was very slow
+160,Housekeeping did not clean the room
+161,The hotel room was not clean
+162,Room booking was not confirmed
+163,I received the wrong booking dates
+164,Room booking was not confirmed
+165,Housekeeping did not clean the room
+166,I was charged twice for my reservation
+167,My request was ignored by the service team
+168,Reservation details were incorrect
+169,The staff was not helpful during check-in
+170,I received the wrong booking dates
+171,The response from support was very slow
+172,The booking website crashed during payment
+173,Bathroom hygiene was unacceptable
+174,The room had a bad smell
+175,Room booking was not confirmed
+176,Refund has not been processed
+177,Booking confirmation email never arrived
+178,My reservation disappeared from the system
+179,Reservation details were incorrect
+180,The booking website crashed during payment
+181,My reservation disappeared from the system
+182,Refund has not been processed
+183,My reservation disappeared from the system
+184,Housekeeping did not clean the room
+185,I was charged twice for my reservation
+186,Housekeeping did not clean the room
+187,The website keeps showing server errors
+188,Bathroom hygiene was unacceptable
+189,I received the wrong booking dates
+190,The booking website crashed during payment
+191,Reception staff behaved unprofessionally
+192,The website keeps showing server errors
+193,Housekeeping did not clean the room
+194,I received the wrong booking dates
+195,My reservation disappeared from the system
+196,The invoice amount is incorrect
+197,Unexpected charges appeared on my bill
+198,System error while confirming reservation
+199,Housekeeping did not clean the room
+200,The booking website crashed during payment
+201,The invoice amount is incorrect
+202,Room booking was not confirmed
+203,My reservation disappeared from the system
+204,The website keeps showing server errors
+205,Customer service did not respond to my request
+206,Refund has not been processed
+207,Reception staff behaved unprofessionally
+208,The response from support was very slow
+209,Refund has not been processed
+210,Payment was deducted but booking not confirmed
+211,Refund has not been processed
+212,Booking confirmation email never arrived
+213,Bathroom hygiene was unacceptable
+214,My reservation disappeared from the system
+215,The hotel room was not clean
+216,The room had a bad smell
+217,The room had a bad smell
+218,Bathroom hygiene was unacceptable
+219,Bathroom hygiene was unacceptable
+220,The staff was not helpful during check-in
+221,Booking confirmation email never arrived
+222,Bedsheets were dirty
+223,The room had a bad smell
+224,Booking confirmation email never arrived
+225,The response from support was very slow
+226,I received the wrong booking dates
+227,Unable to access my account
+228,Customer service did not respond to my request
+229,Booking confirmation email never arrived
+230,Bedsheets were dirty
+231,Bedsheets were dirty
+232,Bathroom hygiene was unacceptable
+233,Customer service did not respond to my request
+234,Bedsheets were dirty
+235,Mobile app is not loading properly
+236,My request was ignored by the service team
+237,Bedsheets were dirty
+238,Unexpected charges appeared on my bill
+239,The room had a bad smell
+240,Housekeeping did not clean the room
+241,Booking confirmation email never arrived
+242,Unable to access my account
+243,Payment was deducted but booking not confirmed
+244,I was charged twice for my reservation
+245,Room booking was not confirmed
+246,I was charged twice for my reservation
+247,The response from support was very slow
+248,The response from support was very slow
+249,Mobile app is not loading properly
+250,Unexpected charges appeared on my bill
+251,My request was ignored by the service team
+252,Unexpected charges appeared on my bill
+253,My reservation disappeared from the system
+254,Housekeeping did not clean the room
+255,My request was ignored by the service team
+256,Room booking was not confirmed
+257,Bedsheets were dirty
+258,Refund has not been processed
+259,Reservation details were incorrect
+260,The website keeps showing server errors
+261,I was charged twice for my reservation
+262,Mobile app is not loading properly
+263,The room had a bad smell
+264,The response from support was very slow
+265,Housekeeping did not clean the room
+266,Bathroom hygiene was unacceptable
+267,The response from support was very slow
+268,Room booking was not confirmed
+269,The invoice amount is incorrect
+270,My request was ignored by the service team
+271,Refund has not been processed
+272,Refund has not been processed
+273,The website keeps showing server errors
+274,Mobile app is not loading properly
+275,My request was ignored by the service team
+276,The booking website crashed during payment
+277,Unable to access my account
+278,The staff was not helpful during check-in
+279,The response from support was very slow
+280,The hotel room was not clean
+281,Bedsheets were dirty
+282,Booking confirmation email never arrived
+283,Bedsheets were dirty
+284,Unexpected charges appeared on my bill
+285,Bathroom hygiene was unacceptable
+286,My request was ignored by the service team
+287,Payment was deducted but booking not confirmed
+288,Reception staff behaved unprofessionally
+289,Housekeeping did not clean the room
+290,My reservation disappeared from the system
+291,Mobile app is not loading properly
+292,The response from support was very slow
+293,System error while confirming reservation
+294,Mobile app is not loading properly
+295,Housekeeping did not clean the room
+296,Booking confirmation email never arrived
+297,I was charged twice for my reservation
+298,Unable to access my account
+299,My request was ignored by the service team
+300,Bathroom hygiene was unacceptable
+301,Unexpected charges appeared on my bill
+302,My reservation disappeared from the system
+303,I received the wrong booking dates
+304,Bedsheets were dirty
+305,Payment was deducted but booking not confirmed
+306,The website keeps showing server errors
+307,The room had a bad smell
+308,My reservation disappeared from the system
+309,Mobile app is not loading properly
+310,The website keeps showing server errors
+311,I was charged twice for my reservation
+312,My request was ignored by the service team
+313,The hotel room was not clean
+314,The invoice amount is incorrect
+315,Reception staff behaved unprofessionally
+316,The invoice amount is incorrect
+317,The room had a bad smell
+318,The invoice amount is incorrect
+319,Refund has not been processed
+320,The booking website crashed during payment
+321,I was charged twice for my reservation
+322,The invoice amount is incorrect
+323,The website keeps showing server errors
+324,Payment was deducted but booking not confirmed
+325,The response from support was very slow
+326,Reservation details were incorrect
+327,Reservation details were incorrect
+328,I received the wrong booking dates
+329,Refund has not been processed
+330,Payment was deducted but booking not confirmed
+331,Payment was deducted but booking not confirmed
+332,Payment was deducted but booking not confirmed
+333,I was charged twice for my reservation
+334,The website keeps showing server errors
+335,Unexpected charges appeared on my bill
+336,The website keeps showing server errors
+337,Unexpected charges appeared on my bill
+338,Reservation details were incorrect
+339,My reservation disappeared from the system
+340,Room booking was not confirmed
+341,Bathroom hygiene was unacceptable
+342,Reception staff behaved unprofessionally
+343,Bedsheets were dirty
+344,The response from support was very slow
+345,The booking website crashed during payment
+346,Housekeeping did not clean the room
+347,The staff was not helpful during check-in
+348,I was charged twice for my reservation
+349,Housekeeping did not clean the room
+350,Booking confirmation email never arrived
+351,The hotel room was not clean
+352,Mobile app is not loading properly
+353,Mobile app is not loading properly
+354,Booking confirmation email never arrived
+355,Customer service did not respond to my request
+356,Customer service did not respond to my request
+357,Bedsheets were dirty
+358,The staff was not helpful during check-in
+359,My request was ignored by the service team
+360,Payment was deducted but booking not confirmed
+361,Booking confirmation email never arrived
+362,Unexpected charges appeared on my bill
+363,Unexpected charges appeared on my bill
+364,The invoice amount is incorrect
+365,The room had a bad smell
+366,System error while confirming reservation
+367,Customer service did not respond to my request
+368,Unexpected charges appeared on my bill
+369,The hotel room was not clean
+370,The response from support was very slow
+371,Reservation details were incorrect
+372,The website keeps showing server errors
+373,The website keeps showing server errors
+374,My request was ignored by the service team
+375,Bedsheets were dirty
+376,Unable to access my account
+377,The staff was not helpful during check-in
+378,Mobile app is not loading properly
+379,Reception staff behaved unprofessionally
+380,System error while confirming reservation
+381,The response from support was very slow
+382,Reservation details were incorrect
+383,I received the wrong booking dates
+384,Unable to access my account
+385,The hotel room was not clean
+386,My request was ignored by the service team
+387,Unexpected charges appeared on my bill
+388,My request was ignored by the service team
+389,The response from support was very slow
+390,I was charged twice for my reservation
+391,Payment was deducted but booking not confirmed
+392,Payment was deducted but booking not confirmed
+393,The room had a bad smell
+394,Bathroom hygiene was unacceptable
+395,Payment was deducted but booking not confirmed
+396,The website keeps showing server errors
+397,The room had a bad smell
+398,The response from support was very slow
+399,Room booking was not confirmed
+400,Bedsheets were dirty
+401,Reception staff behaved unprofessionally
+402,Housekeeping did not clean the room
+403,Refund has not been processed
+404,The website keeps showing server errors
+405,The invoice amount is incorrect
+406,Bathroom hygiene was unacceptable
+407,Bathroom hygiene was unacceptable
+408,Room booking was not confirmed
+409,My request was ignored by the service team
+410,Bathroom hygiene was unacceptable
+411,I received the wrong booking dates
+412,The invoice amount is incorrect
+413,Room booking was not confirmed
+414,Unexpected charges appeared on my bill
+415,Mobile app is not loading properly
+416,The invoice amount is incorrect
+417,Bedsheets were dirty
+418,Reservation details were incorrect
+419,My reservation disappeared from the system
+420,Unexpected charges appeared on my bill
+421,Payment was deducted but booking not confirmed
+422,System error while confirming reservation
+423,Housekeeping did not clean the room
+424,Bathroom hygiene was unacceptable
+425,Reservation details were incorrect
+426,The website keeps showing server errors
+427,Payment was deducted but booking not confirmed
+428,Unable to access my account
+429,My request was ignored by the service team
+430,I received the wrong booking dates
+431,Unable to access my account
+432,Booking confirmation email never arrived
+433,Payment was deducted but booking not confirmed
+434,Reception staff behaved unprofessionally
+435,Customer service did not respond to my request
+436,Payment was deducted but booking not confirmed
+437,Mobile app is not loading properly
+438,Customer service did not respond to my request
+439,The response from support was very slow
+440,The hotel room was not clean
+441,Reception staff behaved unprofessionally
+442,The booking website crashed during payment
+443,Reservation details were incorrect
+444,Room booking was not confirmed
+445,Bathroom hygiene was unacceptable
+446,My reservation disappeared from the system
+447,The staff was not helpful during check-in
+448,My request was ignored by the service team
+449,Bathroom hygiene was unacceptable
+450,My request was ignored by the service team
+451,Payment was deducted but booking not confirmed
+452,The staff was not helpful during check-in
+453,The response from support was very slow
+454,My request was ignored by the service team
+455,Booking confirmation email never arrived
+456,The hotel room was not clean
+457,The booking website crashed during payment
+458,Reception staff behaved unprofessionally
+459,The room had a bad smell
+460,Room booking was not confirmed
+461,Reception staff behaved unprofessionally
+462,Bathroom hygiene was unacceptable
+463,Bathroom hygiene was unacceptable
+464,Housekeeping did not clean the room
+465,Mobile app is not loading properly
+466,Unable to access my account
+467,Housekeeping did not clean the room
+468,The invoice amount is incorrect
+469,Reservation details were incorrect
+470,The staff was not helpful during check-in
+471,The invoice amount is incorrect
+472,Housekeeping did not clean the room
+473,Room booking was not confirmed
+474,The hotel room was not clean
+475,Reception staff behaved unprofessionally
+476,Housekeeping did not clean the room
+477,Payment was deducted but booking not confirmed
+478,The hotel room was not clean
+479,Refund has not been processed
+480,My request was ignored by the service team
+481,The hotel room was not clean
+482,Booking confirmation email never arrived
+483,I received the wrong booking dates
+484,Payment was deducted but booking not confirmed
+485,Room booking was not confirmed
+486,Reservation details were incorrect
+487,The website keeps showing server errors
+488,The hotel room was not clean
+489,Room booking was not confirmed
+490,Unable to access my account
+491,The staff was not helpful during check-in
+492,The website keeps showing server errors
+493,The room had a bad smell
+494,Mobile app is not loading properly
+495,I was charged twice for my reservation
+496,Housekeeping did not clean the room
+497,Payment was deducted but booking not confirmed
+498,Refund has not been processed
+499,The response from support was very slow
+500,I received the wrong booking dates
