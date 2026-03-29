@@ -1,40 +1,55 @@
 # Simulation
 
-This repository holds coursework for the **Simulation** assignment. The remote is [github.com/ellenne/Simulation](https://github.com/ellenne/Simulation).
+Coursework for the **Simulation** assignment. Remote: [github.com/ellenne/Simulation](https://github.com/ellenne/Simulation).
 
-## What you need to do
+## Datasets
 
-Use this section as a running checklist. Update it as requirements become clear (datasets, deliverables, deadlines).
+All data files are organized in the **`Data/`** folder at the root of this repository.
 
-- [ ] **Clarify the brief** — Read the official instructions and list concrete outputs (code, report, slides, etc.).
-- [ ] **Understand the data** — Explore the files under `Data/` and document what each column means and how train/test splits are intended to be used.
-- [ ] **Build the solution** — Implement the required models or simulations, with clear, reproducible steps.
-- [ ] **Validate** — Define metrics, run experiments, and record results.
-- [ ] **Write up** — Summarize assumptions, methods, and findings for submission.
+Four supervised problems live there, each with separate **train** and **test** CSVs (2,000 rows per split in the current files):
+
+| Problem | Files | Target | Inputs (summary) |
+|--------|--------|--------|-------------------|
+| Medical risk | `medical_risk_*.csv` | `risk_label` | Vitals and lifestyle (age, BMI, blood pressure, labs, smoker, activity, etc.) |
+| Hotel demand | `hotel_demand_*.csv` | `demand_label` | Booking attributes (lead time, stay length, party size, season, price, history, requests) |
+| Complaint NLP | `complaint_nlp_*.csv` | `category_label` | Free text `complaint_text` → category (booking, billing, cleanliness, service, technical) |
+| Candidate success | `candidate_success_*.csv` | `success_label` | Skills, experience, education, GitHub activity, certifications, etc. |
+
+Use the official brief to confirm metrics, allowed models, and submission format.
 
 ## Repository layout
 
 | Path | Description |
 |------|-------------|
-| `Data/` | Training and test CSVs for the exercises (medical risk, hotel demand, complaint NLP, candidate success). |
+| `Data/` | Train/test CSVs for the four problems above. |
+| `DataExploration.ipynb` | Markdown + code: dataset descriptions, E/R-style sketches, targets and business framing; shape/feature lists; missing values, duplicates, and outlier-style checks. |
+| `requirements.txt` | Pinned dependency ranges for the notebook (`pandas`, `ipython`, `ipykernel`). |
+| `venv/` | Local virtual environment (gitignored). Create with the commands below. |
 
-*(Add notebooks, `src/`, or `reports/` here as the project grows.)*
+## What you still need to do
+
+- [ ] **Align with the brief** — Deliverables (code, report, limits on libraries), deadlines, and evaluation rules.
+- [x] **First-pass data understanding** — Started in `DataExploration.ipynb` (extend as you model).
+- [ ] **Modeling** — Implement and validate approaches per task; record metrics on the held-out test split as required.
+- [ ] **Write-up** — Assumptions, methods, results, and limitations for submission.
 
 ## Setup
 
-*(Add Python version, `venv` creation, and `pip install` steps once dependencies are defined.)*
+Python 3.10+ is recommended. Dependencies are listed in `requirements.txt` (**pandas**, **ipython** for `IPython.display`, **ipykernel** so Cursor/VS Code can run `.ipynb` files).
 
-```bash
-# Example (adjust when you add requirements.txt)
-# python -m venv .venv
-# .venv\Scripts\activate
-# pip install -r requirements.txt
+```powershell
+cd path\to\Simulation
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
 ```
+
+In Cursor/VS Code, choose **Python: Select Interpreter** and pick `venv\Scripts\python.exe`.
+
+To open a classic Jupyter UI in the browser (optional), run `pip install jupyter` inside the same environment, then `jupyter notebook` or `jupyter lab`.
+
+If a broken `.venv` folder is left over from an interrupted install and you cannot delete it, close editors using that path and remove the folder manually, or keep using `venv` as above.
 
 ## Notes
 
-*(Scratch space for decisions, references, and open questions.)*
-
----
-
-*This README is intentionally a template; extend the sections above as the assignment specification is finalized.*
+*(Decisions, references, and open questions.)*
