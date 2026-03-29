@@ -1,0 +1,5 @@
+# DataExploration.ipynb — pandas + notebook kernel (Cursor / VS Code)
+pandas>=2.0.0,<3.0.0
+ipython>=8.12.0
+ipykernel>=6.29.0
+# Optional browser UI: pip install jupyter
