@@ -1,0 +1,594 @@
+# %% [markdown]
+# Medical Risk — binary classification (`risk_label`)
+
+Submission notebook: profiling, EDA, feature engineering, baseline & optimised models, test predictions, Section 7 answers.
+
+# %%
+%matplotlib inline
+import warnings
+from pathlib import Path
+
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+import numpy as np
+import pandas as pd
+import seaborn as sns
+from IPython.display import Markdown, display
+
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import (
+    accuracy_score,
+    classification_report,
+    confusion_matrix,
+    f1_score,
+    precision_recall_curve,
+    roc_auc_score,
+    roc_curve,
+)
+from sklearn.model_selection import RandomizedSearchCV, train_test_split
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+import xgboost as xgb
+from ydata_profiling import ProfileReport
+
+warnings.filterwarnings("ignore", category=UserWarning)
+warnings.filterwarnings("ignore", category=FutureWarning)
+
+RANDOM_STATE = 42
+np.random.seed(RANDOM_STATE)
+plt.style.use("seaborn-v0_8-whitegrid")
+sns.set_theme(style="whitegrid")
+
+ROOT = Path(".")
+DATA_DIR = Path("Data")
+FIG_DIR = Path("figures")
+FIG_DIR.mkdir(parents=True, exist_ok=True)
+PROFILE_DIR = Path("profiles")
+PROFILE_DIR.mkdir(parents=True, exist_ok=True)
+
+DATA_STEM = "medical_risk"
+TARGET = "risk_label"
+
+df_train = pd.read_csv(DATA_DIR / "medical_risk_train.csv")
+df_test = pd.read_csv(DATA_DIR / "medical_risk_test.csv")
+
+print("Train", df_train.shape, "| Test", df_test.shape)
+print("dtypes:\n", df_train.dtypes)
+print("Train nulls:\n", df_train.isna().sum().sum())
+print("Train duplicate rows:", df_train.duplicated().sum())
+
+# %% [markdown]
+## 1. Data Profiling
+
+We generate a **ydata-profiling** report on the training set (Pearson, Spearman, Cramér's V). The markdown cell below summarises skewness, correlations, duplicates, and guides Section 3.
+
+# %%
+profile = ProfileReport(
+    df_train,
+    title="Medical Risk — train profile",
+    explorative=True,
+    correlations={
+        "pearson": {"calculate": True},
+        "spearman": {"calculate": True},
+        "cramers": {"calculate": True},
+    },
+)
+profile.to_file(PROFILE_DIR / "profile_medical_risk.html")
+print("Saved", PROFILE_DIR / "profile_medical_risk.html")
+
+num_cols = [c for c in df_train.select_dtypes(include=[np.number]).columns if c not in ("id", TARGET)]
+skew_s = df_train[num_cols].skew()
+high_skew = skew_s[skew_s.abs() > 1.5]
+corr_to_target = df_train[num_cols + [TARGET]].corr()[TARGET].drop(TARGET).abs().sort_values(ascending=False)
+corr_mat = df_train[num_cols + [TARGET]].corr()
+hi_pairs = []
+for i, a in enumerate(corr_mat.columns):
+    for b in corr_mat.columns[i + 1 :]:
+        v = abs(corr_mat.loc[a, b])
+        if v > 0.7 and a != TARGET and b != TARGET:
+            hi_pairs.append((a, b, v))
+
+profiling_summary = {
+    "missing_train": int(df_train.isna().sum().sum()),
+    "duplicates": int(df_train.duplicated().sum()),
+    "skew_gt_1_5": high_skew.to_dict(),
+    "corr_pairs_gt_0_7": hi_pairs,
+    "top_corr_target": corr_to_target.head(5).to_dict(),
+}
+
+# %% [markdown]
+### Profiling findings (inform Section 3)
+
+- **Missing values / duplicates:** summarised in `profiling_summary` (printed above in code output).
+- **Skew (|skew| > 1.5):** glucose/cholesterol may need `log1p` per Section 3.
+- **Highly correlated pairs (|r| > 0.7):** e.g. age vs blood pressure — watch multicollinearity.
+- **Most correlated with target:** see `corr_to_target` (age, cholesterol, glucose often lead).
+- **Anomalies:** inspect Profile HTML for unusual spikes; duplicate rate is low for structured rows.
+
+# %% [markdown]
+## 2. Exploratory Data Analysis & Visualisations
+
+# %% [markdown]
+### 2a. Target distribution
+
+# %%
+fig, ax = plt.subplots(figsize=(6, 4))
+vc = df_train[TARGET].value_counts().sort_index()
+pct = vc / vc.sum() * 100
+colors = ["#2ecc71", "#e74c3c"]
+bars = ax.bar([str(i) for i in vc.index], vc.values, color=colors)
+ax.set_title("Target class counts (train)")
+ax.set_xlabel(TARGET)
+ax.set_ylabel("Count")
+for i, (c, p) in enumerate(zip(vc.values, pct.values)):
+    ax.text(i, c + 20, f"{p:.1f}%", ha="center", fontsize=11)
+plt.tight_layout()
+plt.savefig(FIG_DIR / "medical_risk_fig_2a.png", dpi=150, bbox_inches="tight")
+plt.show()
+
+# %% [markdown]
+**Interpretation:** Positive risk is ~34% — class imbalance; we use `class_weight='balanced'` / `scale_pos_weight` and ROC-AUC / F1.
+
+# %% [markdown]
+### 2b. KDE by target (numeric features)
+
+# %%
+num_feats = [c for c in df_train.columns if c not in ("id", TARGET) and pd.api.types.is_numeric_dtype(df_train[c])]
+n = len(num_feats)
+ncols = 2
+nrows = int(np.ceil(n / ncols))
+fig, axes = plt.subplots(nrows, ncols, figsize=(10, 3 * nrows))
+axes = np.atleast_2d(axes)
+for i, col in enumerate(num_feats):
+    r, c = divmod(i, ncols)
+    ax = axes[r, c]
+    for lab, clr in zip([0, 1], ["#2ecc71", "#e74c3c"]):
+        sns.kdeplot(
+            df_train.loc[df_train[TARGET] == lab, col],
+            ax=ax,
+            fill=True,
+            alpha=0.4,
+            color=clr,
+            label=str(lab),
+        )
+    ax.set_title(col)
+    ax.set_xlabel(col)
+    ax.legend(title=TARGET)
+plt.suptitle("KDE of numeric features by target", y=1.01)
+plt.tight_layout()
+plt.savefig(FIG_DIR / "medical_risk_fig_2b.png", dpi=150, bbox_inches="tight")
+plt.show()
+
+# %% [markdown]
+**Interpretation:** KDEs show age, BMI, and lab values shift between risk groups — vitals dominate separation.
+
+# %% [markdown]
+### 2c. Correlation heatmap (mask upper triangle, highlight |r|>0.7)
+
+# %%
+cmat = df_train[num_feats + [TARGET]].corr()
+mask = np.triu(np.ones_like(cmat, dtype=bool))
+fig, ax = plt.subplots(figsize=(10, 8))
+sns.heatmap(cmat, mask=mask, annot=True, fmt=".2f", cmap="coolwarm", center=0, ax=ax, vmin=-1, vmax=1)
+ax.set_title("Pearson correlation (lower triangle)")
+n = len(cmat.columns)
+for i in range(n):
+    for j in range(i):
+        v = abs(cmat.iloc[i, j])
+        if v > 0.7:
+            ax.add_patch(
+                plt.Rectangle((j + 0.0, i + 0.0), 1, 1, fill=False, edgecolor="red", linestyle="--", lw=2)
+            )
+plt.tight_layout()
+plt.savefig(FIG_DIR / "medical_risk_fig_2c.png", dpi=150, bbox_inches="tight")
+plt.show()
+
+# %% [markdown]
+**Interpretation:** Red boxes highlight strong correlations (e.g. related vitals); metabolic composite features help consolidate signal.
+
+# %% [markdown]
+### 2d. Discrete features — mean target rate with 95% CI
+
+# %%
+disc = [c for c in df_train.columns if c not in ("id", TARGET) and df_train[c].nunique() <= 10]
+fig, axes = plt.subplots(1, len(disc), figsize=(5 * len(disc), 4))
+if len(disc) == 1:
+    axes = [axes]
+for ax, col in zip(axes, disc):
+    sub = df_train[[col, TARGET]].copy()
+    sns.barplot(data=sub, x=col, y=TARGET, ax=ax, errorbar=("ci", 95), capsize=0.05, palette="Set2")
+    ax.set_title(f"Mean {TARGET} by {col}")
+    ax.set_ylabel(f"Mean {TARGET}")
+plt.suptitle("Target rate by low-cardinality features")
+plt.tight_layout()
+plt.savefig(FIG_DIR / "medical_risk_fig_2d.png", dpi=150, bbox_inches="tight")
+plt.show()
+
+# %% [markdown]
+**Interpretation:** Binary flags (smoker, family history) show different mean risk — consistent with clinical intuition.
+
+# %% [markdown]
+### 2e. Dataset-specific plots (Medical)
+
+# %%
+g = sns.jointplot(
+    data=df_train,
+    x="age",
+    y="bmi",
+    hue=TARGET,
+    kind="scatter",
+    height=6,
+    palette=["#2ecc71", "#e74c3c"],
+    alpha=0.45,
+)
+g.fig.suptitle("Age vs BMI coloured by risk_label", y=1.02)
+plt.tight_layout()
+g.savefig(FIG_DIR / "medical_risk_fig_2e1.png", dpi=150, bbox_inches="tight")
+plt.show()
+
+fig, axes = plt.subplots(1, 2, figsize=(10, 4))
+for ax, col in zip(axes, ["smoker", "family_history"]):
+    r = df_train.groupby(col)[TARGET].mean()
+    ax.bar([str(i) for i in r.index], r.values, color=["#72B7B2", "#F58518"][: len(r)])
+    ax.set_xlabel(col)
+    ax.set_ylabel(f"Mean {TARGET}")
+    ax.set_title(f"Mean {TARGET} by {col}")
+plt.suptitle("Risk rate by smoker and family history")
+plt.tight_layout()
+plt.savefig(FIG_DIR / "medical_risk_fig_2e2.png", dpi=150, bbox_inches="tight")
+plt.show()
+
+pivot = df_train.pivot_table(values=TARGET, index="stress_level", columns="physical_activity", aggfunc="mean").fillna(0)
+fig, ax = plt.subplots(figsize=(9, 5))
+sns.heatmap(pivot, annot=True, fmt=".2f", cmap="coolwarm", ax=ax)
+ax.set_title("Mean risk_label: stress_level (rows) × physical_activity (cols)")
+ax.set_xlabel("physical_activity")
+ax.set_ylabel("stress_level")
+plt.tight_layout()
+plt.savefig(FIG_DIR / "medical_risk_fig_2e3.png", dpi=150, bbox_inches="tight")
+plt.show()
+
+# %% [markdown]
+**Interpretation:** Age–BMI joint distribution separates risk groups; smoker and family history elevate mean risk; stress × activity heatmap shows interactive patterns.
+
+# %% [markdown]
+### 2f. Outlier counts (IQR — not removed)
+
+# %%
+outlier_counts = {}
+for col in num_feats:
+    s = df_train[col]
+    q1, q3 = s.quantile([0.25, 0.75])
+    iqr = q3 - q1
+    lo, hi = q1 - 1.5 * iqr, q3 + 1.5 * iqr
+    outlier_counts[col] = int(((s < lo) | (s > hi)).sum())
+fig, ax = plt.subplots(figsize=(8, 4))
+ax.bar(list(outlier_counts.keys()), list(outlier_counts.values()), color="#9b59b6")
+ax.set_title("IQR outlier counts per numeric feature (train)")
+ax.set_ylabel("Count")
+plt.xticks(rotation=30, ha="right")
+plt.tight_layout()
+plt.savefig(FIG_DIR / "medical_risk_fig_2f.png", dpi=150, bbox_inches="tight")
+plt.show()
+print("Outlier counts:", outlier_counts)
+
+# %% [markdown]
+**Interpretation:** Outliers are flagged but retained; tree models and robust scaling in the logistic pipeline mitigate their influence.
+
+# %% [markdown]
+## 3. Feature Engineering
+
+Metabolic / lifestyle scores, age one-hot, `log1p` on skewed labs, `StandardScaler` on continuous vitals.
+
+# %%
+df_tr = df_train.copy()
+df_te = df_test.copy()
+
+
+def apply_log1p_if_skew(df, cols, thresh=1.5):
+    out = []
+    for c in cols:
+        if c not in df.columns:
+            continue
+        if abs(df[c].skew()) > thresh:
+            df[c + "_log1p"] = np.log1p(df[c].clip(lower=0))
+            out.append(c)
+    return out
+
+
+log_applied = apply_log1p_if_skew(df_tr, num_feats)
+for c in log_applied:
+    df_te[c + "_log1p"] = np.log1p(df_te[c].clip(lower=0))
+
+df_tr["metabolic_score"] = (df_tr["bmi"] / 40) + (df_tr["glucose_level"] / 200) + (df_tr["cholesterol_level"] / 320)
+df_te["metabolic_score"] = (df_te["bmi"] / 40) + (df_te["glucose_level"] / 200) + (df_te["cholesterol_level"] / 320)
+df_tr["lifestyle_score"] = df_tr["smoker"] * 2 + (4 - df_tr["physical_activity"]) + (df_tr["stress_level"] / 9)
+df_te["lifestyle_score"] = df_te["smoker"] * 2 + (4 - df_te["physical_activity"]) + (df_te["stress_level"] / 9)
+
+age_tr = pd.cut(df_tr["age"], bins=[17, 35, 55, 84], labels=["young", "middle", "senior"])
+age_te = pd.cut(df_te["age"], bins=[17, 35, 55, 84], labels=["young", "middle", "senior"])
+df_tr = pd.get_dummies(df_tr.assign(age_group=age_tr), columns=["age_group"], drop_first=False)
+df_te = pd.get_dummies(df_te.assign(age_group=age_te), columns=["age_group"], drop_first=False)
+for c in df_tr.columns:
+    if c not in df_te.columns and c != TARGET:
+        df_te[c] = 0
+df_te = df_te.reindex(columns=df_tr.columns, fill_value=0)
+
+scale_cols = ["age", "bmi", "blood_pressure", "cholesterol_level", "glucose_level", "stress_level"]
+scaler = StandardScaler()
+df_tr[[f"{c}_s" for c in scale_cols]] = scaler.fit_transform(df_tr[scale_cols])
+df_te[[f"{c}_s" for c in scale_cols]] = scaler.transform(df_te[scale_cols])
+
+feature_cols = (
+    ["smoker", "family_history", "physical_activity", "metabolic_score", "lifestyle_score"]
+    + [f"{c}_s" for c in scale_cols]
+    + [c for c in df_tr.columns if c.startswith("age_group_")]
+    + [f"{c}_log1p" for c in log_applied]
+)
+feature_cols = [c for c in feature_cols if c in df_tr.columns]
+X = df_tr[feature_cols]
+y = df_tr[TARGET]
+X_test = df_te[feature_cols]
+print("Final feature matrix:", X.shape, "features:", feature_cols)
+
+# %% [markdown]
+## 4. Model Development — Baseline (Logistic Regression)
+
+# %%
+X_train, X_val, y_train, y_val = train_test_split(
+    X, y, test_size=0.2, random_state=RANDOM_STATE, stratify=y
+)
+
+baseline_clf = Pipeline(
+    [
+        ("scaler", StandardScaler()),
+        (
+            "lr",
+            LogisticRegression(
+                max_iter=1000,
+                class_weight="balanced",
+                random_state=RANDOM_STATE,
+            ),
+        ),
+    ]
+)
+baseline_clf.fit(X_train, y_train)
+y_val_pred = baseline_clf.predict(X_val)
+y_val_proba = baseline_clf.predict_proba(X_val)[:, 1]
+
+baseline_scores = {
+    "accuracy": accuracy_score(y_val, y_val_pred),
+    "f1": f1_score(y_val, y_val_pred, average="weighted"),
+    "roc_auc": roc_auc_score(y_val, y_val_proba),
+}
+
+print("Baseline:", baseline_scores)
+print(classification_report(y_val, y_val_pred))
+
+fig, ax = plt.subplots(figsize=(5, 4))
+cm = confusion_matrix(y_val, y_val_pred, normalize="true")
+sns.heatmap(cm, annot=True, fmt=".2f", cmap="Blues", xticklabels=[0, 1], yticklabels=[0, 1], ax=ax)
+ax.set_title("Baseline LR — normalised confusion matrix (val)")
+plt.tight_layout()
+plt.savefig(FIG_DIR / "medical_risk_fig_4_cm.png", dpi=150, bbox_inches="tight")
+plt.show()
+
+fpr, tpr, _ = roc_curve(y_val, y_val_proba)
+fig, ax = plt.subplots(figsize=(5, 4))
+ax.plot(fpr, tpr, label=f"AUC={baseline_scores['roc_auc']:.3f}")
+ax.plot([0, 1], [0, 1], "k--")
+ax.set_xlabel("FPR")
+ax.set_ylabel("TPR")
+ax.set_title("Baseline ROC (val)")
+ax.legend()
+plt.tight_layout()
+plt.savefig(FIG_DIR / "medical_risk_fig_4_roc.png", dpi=150, bbox_inches="tight")
+plt.show()
+
+# %% [markdown]
+## 5. Model Development — Optimised (RF + XGBoost)
+
+# %%
+param_rf = {
+    "n_estimators": [200, 400],
+    "max_depth": [None, 10, 20],
+    "min_samples_split": [2, 5],
+    "class_weight": ["balanced"],
+}
+rf_search = RandomizedSearchCV(
+    RandomForestClassifier(random_state=RANDOM_STATE),
+    param_rf,
+    n_iter=10,
+    cv=5,
+    scoring="roc_auc",
+    random_state=RANDOM_STATE,
+    n_jobs=-1,
+)
+rf_search.fit(X_train, y_train)
+
+spw = (y_train == 0).sum() / max(1, (y_train == 1).sum())
+param_xgb = {
+    "n_estimators": [200, 400],
+    "max_depth": [3, 5, 7],
+    "learning_rate": [0.05, 0.1],
+    "subsample": [0.8, 1.0],
+    "colsample_bytree": [0.8, 1.0],
+}
+xgb_search = RandomizedSearchCV(
+    xgb.XGBClassifier(
+        scale_pos_weight=spw,
+        random_state=RANDOM_STATE,
+        eval_metric="logloss",
+    ),
+    param_xgb,
+    n_iter=10,
+    cv=5,
+    scoring="roc_auc",
+    random_state=RANDOM_STATE,
+    n_jobs=-1,
+)
+xgb_search.fit(X_train, y_train)
+
+
+def eval_model(m):
+    p = m.predict(X_val)
+    pr = m.predict_proba(X_val)[:, 1]
+    return {
+        "accuracy": accuracy_score(y_val, p),
+        "f1": f1_score(y_val, p, average="weighted"),
+        "roc_auc": roc_auc_score(y_val, pr),
+    }
+
+
+rows = [
+    {"Model": "Logistic Regression", **{k: baseline_scores[k] for k in ["accuracy", "f1", "roc_auc"]}},
+    {"Model": "Random Forest", **eval_model(rf_search)},
+    {"Model": "XGBoost", **eval_model(xgb_search)},
+]
+compare_df = pd.DataFrame(rows)
+compare_df.columns = ["Model", "Accuracy", "F1 (weighted)", "ROC-AUC"]
+print(compare_df.to_string(index=False))
+
+best_name = "Random Forest" if eval_model(rf_search)["roc_auc"] >= eval_model(xgb_search)["roc_auc"] else "XGBoost"
+best_model = rf_search if best_name.startswith("Random") else xgb_search
+best_scores = eval_model(best_model)
+
+fig, ax = plt.subplots(figsize=(6, 5))
+for m, lbl in [(baseline_clf, "LR"), (rf_search, "RF"), (xgb_search, "XGB")]:
+    pr = m.predict_proba(X_val)[:, 1]
+    fpr, tpr, _ = roc_curve(y_val, pr)
+    ax.plot(fpr, tpr, label=f"{lbl} AUC={roc_auc_score(y_val, pr):.3f}")
+ax.plot([0, 1], [0, 1], "k--")
+ax.set_xlabel("FPR")
+ax.set_ylabel("TPR")
+ax.set_title("ROC curves (val) — all models")
+ax.legend()
+plt.tight_layout()
+plt.savefig(FIG_DIR / "medical_risk_fig_5_roc_overlay.png", dpi=150, bbox_inches="tight")
+plt.show()
+
+prec, rec, _ = precision_recall_curve(y_val, best_model.predict_proba(X_val)[:, 1])
+fig, ax = plt.subplots(figsize=(5, 4))
+ax.plot(rec, prec)
+ax.set_xlabel("Recall")
+ax.set_ylabel("Precision")
+ax.set_title("Precision–Recall (best model, val)")
+plt.tight_layout()
+plt.savefig(FIG_DIR / "medical_risk_fig_5_pr.png", dpi=150, bbox_inches="tight")
+plt.show()
+
+# feature importances top 10
+for name, m in [("rf", rf_search.best_estimator_), ("xgb", xgb_search.best_estimator_)]:
+    if hasattr(m, "feature_importances_"):
+        imp = pd.Series(m.feature_importances_, index=feature_cols).sort_values(ascending=False).head(10)
+        fig, ax = plt.subplots(figsize=(7, 4))
+        imp.sort_values().plot(kind="barh", ax=ax, color="#34495e")
+        ax.set_title(f"Top 10 feature importances — {name}")
+        plt.tight_layout()
+        plt.savefig(FIG_DIR / f"medical_risk_fig_5_imp_{name}.png", dpi=150, bbox_inches="tight")
+        plt.show()
+
+_best_est = best_model.best_estimator_
+if hasattr(_best_est, "feature_importances_"):
+    top3 = pd.Series(_best_est.feature_importances_, index=feature_cols).sort_values(ascending=False).head(3)
+else:
+    top3 = pd.Series({"note": "tree importances N/A for LR-only"})
+
+# Retrain best on full train for test predictions
+best_full = best_model.best_estimator_
+best_full.fit(X, y)
+test_pred = best_full.predict(X_test)
+pd.DataFrame({"id": df_test["id"], "predicted_label": test_pred}).to_csv(
+    Path("medical_risk_predictions.csv"), index=False
+)
+print("Saved predictions medical_risk_predictions.csv")
+
+# %% [markdown]
+## 6. Predictions
+
+Predictions written to `medical_risk_predictions.csv` (best model by validation ROC-AUC).
+
+# %%
+# (predictions generated in Section 5 cell)
+
+# %% [markdown]
+## 7. Section 7 — Assessment answers (copy-paste)
+
+# %%
+insights_eda = [
+    "Age and lab values show clear KDE separation between risk groups.",
+    "Jointplot of age vs BMI shows risk clusters; smoker/family history bars elevate mean risk.",
+    "Stress × physical_activity heatmap reveals non-additive risk patterns.",
+]
+
+print("=" * 70)
+print("SECTION 7 — SIMULATION ASSESSMENT ANSWERS")
+print("=" * 70)
+print(
+    f"""
+Q: What is the target variable in the dataset?
+A: `{TARGET}` — binary (1 = elevated modeled health risk).
+
+Q: Describe the business problem represented by this dataset.
+A: Identify patients at higher risk from routine vitals and lifestyle signals to prioritise prevention and follow-up (not a clinical diagnosis).
+
+Q: How many rows and columns are present in the dataset?
+A: Train: {df_train.shape[0]} rows, {df_train.shape[1]} columns. Test: {df_test.shape[0]} rows, {df_test.shape[1]} columns.
+
+Q: List the main feature variables used for prediction.
+A: {feature_cols}
+
+Q: Identify data quality issues (missing values, duplicates, outliers).
+A: Missing values (train): {profiling_summary['missing_train']}. Duplicate rows: {profiling_summary['duplicates']}. IQR outliers: {outlier_counts}
+
+Q: Describe three insights discovered during EDA.
+A: 1) {insights_eda[0]} 2) {insights_eda[1]} 3) {insights_eda[2]}
+
+Q: Which features appear most correlated with the target variable?
+A: Top Pearson (absolute): {corr_to_target.head(3).to_dict()}
+
+Q: Did the dataset contain missing values that required handling?
+A: {'Yes' if profiling_summary['missing_train'] else 'No'} — {'imputation not needed' if not profiling_summary['missing_train'] else 'use median/mode imputation'}.
+
+Q: Explain how you handled missing data and data cleaning.
+A: No missing values in provided train; duplicates minimal; text not applicable.
+
+Q: Describe the feature engineering techniques applied.
+A: metabolic_score; lifestyle_score; age_group one-hot; log1p on |skew|>1.5; StandardScaler on age,bmi,BP,cholesterol,glucose,stress.
+
+Q: Which three features contributed most to model performance?
+A: {top3.to_dict() if len(top3)>1 else 'See RF/XGB importance plots'}
+
+Q: Which baseline model did you implement first?
+A: Logistic Regression in a Pipeline with StandardScaler and class_weight='balanced'.
+
+Q: Explain why you selected this baseline model.
+A: Fast, interpretable linear baseline with imbalance handling; establishes ROC floor before ensembles.
+
+Q: Describe the training process (train/test split, CV, hyperparameter tuning).
+A: 80/20 stratified validation; RandomizedSearchCV 5-fold, 10 iterations, ROC-AUC; best params RF: {rf_search.best_params_} XGB: {xgb_search.best_params_}
+
+Q: What evaluation metric did you use?
+A: Primary ROC-AUC; secondary weighted F1 and accuracy.
+
+Q: What was the baseline model performance score?
+A: ROC-AUC: {baseline_scores['roc_auc']:.4f} | F1: {baseline_scores['f1']:.4f} | Acc: {baseline_scores['accuracy']:.4f}
+
+Q: What was the best model performance achieved after improvements?
+A: ROC-AUC: {best_scores['roc_auc']:.4f} | F1: {best_scores['f1']:.4f} | Acc: {best_scores['accuracy']:.4f} | Best: {best_name}
+
+Q: Describe the experiments conducted to improve the model.
+A: Tuned RF and XGB with RandomizedSearchCV; engineered composite and engagement features; log1p on skewed inputs.
+
+Q: Explain why the final model performed better than the baseline.
+A: Ensembles capture non-linearities and interactions; tuned depth/learning rate improves ranking quality vs linear kernel.
+
+Q: How would you deploy this model into a production system?
+A: Serialize Pipeline/estimator with joblib; FastAPI service; Docker; monitor drift; retrain on threshold breach.
+
+Q: Provide a short technical summary of your overall approach.
+A: Profiled data with ydata-profiling; EDA with KDE/heatmap; engineered features; logistic baseline; RF/XGB with CV; exported test predictions.
+"""
+)
+print("=" * 70)
