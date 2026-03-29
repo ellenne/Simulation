@@ -22,8 +22,13 @@ Use the official brief to confirm metrics, allowed models, and submission format
 | Path | Description |
 |------|-------------|
 | `Data/` | Train/test CSVs for the four problems above. |
-| `DataExploration.ipynb` | Markdown + code: dataset descriptions, E/R-style sketches, targets and business framing; shape/feature lists; missing values, duplicates, and outlier-style checks. |
-| `requirements.txt` | Pinned dependency ranges for the notebook (`pandas`, `ipython`, `ipykernel`). |
+| `DataExploration.ipynb` | Exploratory analysis (legacy / overview). |
+| `candidate_success.ipynb` | Submission notebook — Candidate Success task. |
+| `complaint_nlp.ipynb` | Submission notebook — Complaint NLP task. |
+| `hotel_demand.ipynb` | Submission notebook — Hotel Demand task. |
+| `medical_risk.ipynb` | Submission notebook — Medical Risk task. |
+| `generate_notebooks.py` | Regenerates the four `.ipynb` files from embedded templates. |
+| `requirements.txt` | Python dependencies (includes `ydata-profiling`, `xgboost`, etc.). |
 | `venv/` | Local virtual environment (gitignored). Create with the commands below. |
 
 ## What you still need to do
@@ -35,7 +40,7 @@ Use the official brief to confirm metrics, allowed models, and submission format
 
 ## Setup
 
-Python 3.10+ is recommended. Dependencies are listed in `requirements.txt` (**pandas**, **ipython** for `IPython.display`, **ipykernel** so Cursor/VS Code can run `.ipynb` files).
+Python 3.10+ is recommended. Dependencies are listed in `requirements.txt`.
 
 ```powershell
 cd path\to\Simulation
@@ -46,9 +51,11 @@ pip install -r requirements.txt
 
 In Cursor/VS Code, choose **Python: Select Interpreter** and pick `venv\Scripts\python.exe`.
 
-To open a classic Jupyter UI in the browser (optional), run `pip install jupyter` inside the same environment, then `jupyter notebook` or `jupyter lab`.
+To regenerate submission notebooks after editing `generate_notebooks.py`:
 
-If a broken `.venv` folder is left over from an interrupted install and you cannot delete it, close editors using that path and remove the folder manually, or keep using `venv` as above.
+```powershell
+python generate_notebooks.py
+```
 
 ## Notes
 

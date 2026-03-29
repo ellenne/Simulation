@@ -1,5 +1,22 @@
-# DataExploration.ipynb — pandas + notebook kernel (Cursor / VS Code)
+# Core data & notebooks
 pandas>=2.0.0,<3.0.0
+numpy>=1.24.0,<3.0.0
 ipython>=8.12.0
 ipykernel>=6.29.0
-# Optional browser UI: pip install jupyter
+
+# Visualization & EDA (KDE, jointplot, heatmaps, ROC)
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# ML — baselines, pipelines, TF-IDF, metrics, preprocessing
+scikit-learn>=1.3.0
+scipy>=1.10.0
+
+# Gradient boosting (optimised models / Section 5)
+xgboost>=2.0.0
+
+# Train profiling reports (ProfileReport HTML)
+ydata-profiling>=4.6.0
+
+# Optional: full Jupyter in browser
+# jupyter>=1.0.0
