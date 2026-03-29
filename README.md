@@ -46,6 +46,19 @@ pip install -r requirements.txt
 
 In Cursor/VS Code, choose **Python: Select Interpreter** and pick `venv\Scripts\python.exe`.
 
+**Jupyter kernel “Simulation”** (optional): register this `venv` so it appears as a named kernel:
+
+```powershell
+.\venv\Scripts\python.exe -m ipykernel install --user --name=simulation --display-name="Simulation"
+```
+
+To **replace** an existing `simulation` kernel, remove it first (`ipykernel install` has no `--force` flag):
+
+```powershell
+.\venv\Scripts\python.exe -m jupyter kernelspec remove simulation -f
+.\venv\Scripts\python.exe -m ipykernel install --user --name=simulation --display-name="Simulation"
+```
+
 To open a classic Jupyter UI in the browser (optional), run `pip install jupyter` inside the same environment, then `jupyter notebook` or `jupyter lab`.
 
 If a broken `.venv` folder is left over from an interrupted install and you cannot delete it, close editors using that path and remove the folder manually, or keep using `venv` as above.
