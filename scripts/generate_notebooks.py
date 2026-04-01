@@ -1,6 +1,6 @@
 """
-Assemble submission notebooks from notebook_sources/*.nb.txt
-Run from project root: python generate_notebooks.py
+Assemble submission notebooks from scripts/notebook_sources/*.nb.txt
+Run from project root: python scripts/generate_notebooks.py
 
 Cell delimiter:
   # %% [markdown]   -> markdown cell
@@ -12,8 +12,9 @@ import json
 import re
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
-SRC = ROOT / "notebook_sources"
+ROOT = Path(__file__).resolve().parent.parent
+SRC = ROOT / "scripts" / "notebook_sources"
+OUT_DIR = ROOT / "notebooks"
 
 
 def parse_nb_source(text: str) -> list:
@@ -56,6 +57,7 @@ def parse_nb_source(text: str) -> list:
 
 
 def write_ipynb(stem: str, cells: list) -> None:
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
     nb = {
         "nbformat": 4,
         "nbformat_minor": 5,
@@ -65,7 +67,7 @@ def write_ipynb(stem: str, cells: list) -> None:
         },
         "cells": cells,
     }
-    out = ROOT / f"{stem}.ipynb"
+    out = OUT_DIR / f"{stem}.ipynb"
     out.write_text(json.dumps(nb, indent=1), encoding="utf-8")
     print("Wrote", out)
 
