@@ -20,12 +20,15 @@ wheels/
 .installed.cfg
 *.egg
 MANIFEST
+
+# Environment
 venv/
 .venv/
 env/
 .env
 .env.*
 !.env.example
+.vscode/
 
 # Jupyter
 .ipynb_checkpoints/

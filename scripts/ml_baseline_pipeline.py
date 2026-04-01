@@ -1,6 +1,6 @@
 """
 Baseline ML pipeline: EDA, feature engineering, models, test predictions.
-Run from project root: python ml_baseline_pipeline.py
+Run from project root: python scripts/ml_baseline_pipeline.py
 """
 from __future__ import annotations
 
@@ -31,14 +31,16 @@ warnings.filterwarnings("ignore", category=UserWarning)
 RANDOM_STATE = 42
 np.random.seed(RANDOM_STATE)
 
-# Paths (project root = parent of this file)
-ROOT = Path(__file__).resolve().parent
+# Project root = parent of scripts/
+ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "Data"
 FIGURES_DIR = ROOT / "figures"
+OUTPUT_DIR = ROOT / "output"
 
 
 def ensure_dirs() -> None:
     FIGURES_DIR.mkdir(parents=True, exist_ok=True)
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def save_fig(fig: plt.Figure, name: str) -> None:
@@ -322,8 +324,8 @@ def run_candidate() -> None:
     print(f"\n  Using {'RandomForest' if use_rf else 'XGBoost'} for test predictions (higher val F1).")
     preds = fit_full_predict_binary(X, y, X_test, use_rf=use_rf, scale=True)
     out = pd.DataFrame({"id": test["id"], "predicted_label": preds.astype(int)})
-    out.to_csv(ROOT / "candidate_success_predictions.csv", index=False)
-    print(f"  Wrote {ROOT / 'candidate_success_predictions.csv'}")
+    out.to_csv(OUTPUT_DIR / "candidate_success_predictions.csv", index=False)
+    print(f"  Wrote {OUTPUT_DIR / 'candidate_success_predictions.csv'}")
 
 
 # ---------------------------------------------------------------------------
@@ -430,8 +432,8 @@ def run_complaint() -> None:
     pipe.fit(train["complaint_text"], train["category_label"])
     test_preds = pipe.predict(test["complaint_text"])
     out = pd.DataFrame({"id": test["id"], "predicted_label": test_preds})
-    out.to_csv(ROOT / "complaint_nlp_predictions.csv", index=False)
-    print(f"  Wrote {ROOT / 'complaint_nlp_predictions.csv'}")
+    out.to_csv(OUTPUT_DIR / "complaint_nlp_predictions.csv", index=False)
+    print(f"  Wrote {OUTPUT_DIR / 'complaint_nlp_predictions.csv'}")
 
 
 # ---------------------------------------------------------------------------
@@ -469,8 +471,8 @@ def run_hotel() -> None:
     print(f"\n  Using {'RandomForest' if use_rf else 'XGBoost'} for test predictions.")
     preds = fit_full_predict_binary(X, y, X_test, use_rf=use_rf, scale=True)
     out = pd.DataFrame({"id": test["id"], "predicted_label": preds.astype(int)})
-    out.to_csv(ROOT / "hotel_demand_predictions.csv", index=False)
-    print(f"  Wrote {ROOT / 'hotel_demand_predictions.csv'}")
+    out.to_csv(OUTPUT_DIR / "hotel_demand_predictions.csv", index=False)
+    print(f"  Wrote {OUTPUT_DIR / 'hotel_demand_predictions.csv'}")
 
 
 # ---------------------------------------------------------------------------
@@ -533,19 +535,19 @@ def run_medical() -> None:
     print(f"\n  Using {'RandomForest' if use_rf else 'XGBoost'} for test predictions.")
     preds = fit_full_predict_binary(X, y, X_test, use_rf=use_rf, scale=True)
     out = pd.DataFrame({"id": test["id"], "predicted_label": preds.astype(int)})
-    out.to_csv(ROOT / "medical_risk_predictions.csv", index=False)
-    print(f"  Wrote {ROOT / 'medical_risk_predictions.csv'}")
+    out.to_csv(OUTPUT_DIR / "medical_risk_predictions.csv", index=False)
+    print(f"  Wrote {OUTPUT_DIR / 'medical_risk_predictions.csv'}")
 
 
 def main() -> None:
     ensure_dirs()
     sns.set_theme(style="whitegrid")
-    print("ML Baseline Pipeline — figures ->", FIGURES_DIR)
+    print("ML Baseline Pipeline — figures ->", FIGURES_DIR, "| predictions ->", OUTPUT_DIR)
     run_candidate()
     run_complaint()
     run_hotel()
     run_medical()
-    print("\nDone. All prediction CSVs saved to project root.")
+    print("\nDone. All prediction CSVs saved to output/.")
 
 
 if __name__ == "__main__":
