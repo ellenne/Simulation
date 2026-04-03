@@ -4,8 +4,13 @@ Run from project root: python scripts/ml_baseline_pipeline.py
 """
 from __future__ import annotations
 
+import sys
 import warnings
 from pathlib import Path
+
+_SCRIPTS_DIR = Path(__file__).resolve().parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -25,6 +30,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 import xgboost as xgb
+
+import data_cleaning as dc
 
 warnings.filterwarnings("ignore", category=UserWarning)
 
@@ -283,6 +290,8 @@ def run_candidate() -> None:
     train = pd.read_csv(DATA_DIR / "candidate_success_train.csv")
     test = pd.read_csv(DATA_DIR / "candidate_success_test.csv")
     print_df_summary("Candidate Success", train, test)
+    train, test, tlog = dc.impute_tabular_train_test(train, test, "success_label")
+    print(" ", dc.format_tabular_cleaning_log(tlog))
 
     y = train["success_label"]
     plot_target_distribution(y, "Candidate train — success_label", "candidate_target_dist.png")
@@ -335,6 +344,8 @@ def run_complaint() -> None:
     train = pd.read_csv(DATA_DIR / "complaint_nlp_train.csv")
     test = pd.read_csv(DATA_DIR / "complaint_nlp_test.csv")
     print_df_summary("Complaint NLP", train, test)
+    train, test, clog = dc.clean_complaint_frames(train, test)
+    print(" ", dc.format_complaint_cleaning_log(clog))
 
     y = train["category_label"]
     fig, ax = plt.subplots(figsize=(8, 4))
@@ -443,6 +454,8 @@ def run_hotel() -> None:
     train = pd.read_csv(DATA_DIR / "hotel_demand_train.csv")
     test = pd.read_csv(DATA_DIR / "hotel_demand_test.csv")
     print_df_summary("Hotel Demand", train, test)
+    train, test, tlog = dc.impute_tabular_train_test(train, test, "demand_label")
+    print(" ", dc.format_tabular_cleaning_log(tlog))
 
     y = train["demand_label"]
     plot_target_distribution(y, "Hotel train — demand_label", "hotel_target_dist.png")
@@ -482,6 +495,8 @@ def run_medical() -> None:
     train = pd.read_csv(DATA_DIR / "medical_risk_train.csv")
     test = pd.read_csv(DATA_DIR / "medical_risk_test.csv")
     print_df_summary("Medical Risk", train, test)
+    train, test, tlog = dc.impute_tabular_train_test(train, test, "risk_label")
+    print(" ", dc.format_tabular_cleaning_log(tlog))
 
     y = train["risk_label"]
     plot_target_distribution(y, "Medical train — risk_label", "medical_target_dist.png")
